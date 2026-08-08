@@ -12,13 +12,13 @@ export const pythonWithKaranConfig: AppConfig = {
     effectiveDate: "August 8, 2026",
     lastUpdated: "August 8, 2026",
     platform: "Android",
+    published: true,
   },
   developer: {
-    name: "Karan",
+    name: "Karan Saini",
     companyName: "PythonWithKaran",
-    email: "pythonwithkaran@gmail.com",
-    supportEmail: "support@pythonwithkaran.com",
-    website: "https://pythonwithkaran.com",
+    email: "pythonwithkaran.official@gmail.com",
+    supportEmail: "pythonwithkaran.official@gmail.com",
     jurisdiction: "India",
   },
   privacy: {
@@ -88,7 +88,7 @@ export const pythonWithKaranConfig: AppConfig = {
       "Detect, prevent, and address technical bugs or unauthorized app activity.",
     ],
     dataRetentionPolicy:
-      "We retain user personal data (such as account credentials and learning progress) for as long as your account remains active. If you request account deletion, all personal profile records, stored avatars, and quiz progress will be permanently erased from Cloud Firestore and Supabase Storage within 30 days.",
+      "We retain user personal data (such as account credentials and learning progress) for as long as your account remains active. If you request account deletion, all personal profile records, stored avatars, and quiz progress will be securely erased from Cloud Firestore and Supabase Storage after identity verification.",
     securityPractices: [
       "All network communication between the app and servers is encrypted in transit using standard HTTPS/TLS protocols.",
       "Authentication tokens are managed through secure Firebase Authentication SDKs.",
@@ -140,7 +140,7 @@ export const pythonWithKaranConfig: AppConfig = {
         id: "intellectual-property",
         title: "5. Intellectual Property Rights",
         content:
-          "All original study notes, proprietary quizzes, UI design elements, logos, and curriculum structures in PythonWithKaran are the intellectual property of PythonWithKaran / Karan. You are granted a non-exclusive, non-transferable, revocable license for personal, non-commercial educational use only.",
+          "All original study notes, proprietary quizzes, UI design elements, logos, and curriculum structures in PythonWithKaran are the intellectual property of PythonWithKaran / Karan Saini. You are granted a non-exclusive, non-transferable, revocable license for personal, non-commercial educational use only.",
       },
       {
         id: "prohibited-uses",
@@ -192,7 +192,7 @@ export const pythonWithKaranConfig: AppConfig = {
         id: "contact-terms",
         title: "13. Contact Information",
         content:
-          "For any legal questions, copyright inquiries, or support requests regarding these Terms, please contact us at support@pythonwithkaran.com.",
+          "For any legal questions, copyright inquiries, or support requests regarding these Terms, please contact us at pythonwithkaran.official@gmail.com.",
       },
     ],
   },
@@ -209,10 +209,10 @@ export const pythonWithKaranConfig: AppConfig = {
     ],
     retainedDataTypes: [
       "Anonymous, aggregated app performance statistics (non-personally identifiable)",
-      "Temporary security & rate-limiting logs (retained up to 30 days if legally required)",
+      "Temporary security & rate-limiting logs (retained temporarily if legally required)",
     ],
     retentionReason: "Security logs and fraud prevention records are retained temporarily as required by cybersecurity best practices.",
-    processingTime: "7 to 30 business days",
-    supportEmail: "support@pythonwithkaran.com",
+    processingTime: "Requests are securely verified and processed as soon as reasonably possible.",
+    supportEmail: "pythonwithkaran.official@gmail.com",
   },
 };

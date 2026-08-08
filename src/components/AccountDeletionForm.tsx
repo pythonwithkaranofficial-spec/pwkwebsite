@@ -81,7 +81,7 @@ export function AccountDeletionForm({ app }: AccountDeletionFormProps) {
           </div>
           <div>
             <h3 className="font-bold text-lg text-emerald-900 dark:text-emerald-200">
-              Deletion Request Submitted Successfully
+              Deletion Request Received
             </h3>
             <p className="text-xs text-emerald-700 dark:text-emerald-400 font-mono mt-0.5">
               Reference ID: {requestId}
@@ -91,10 +91,10 @@ export function AccountDeletionForm({ app }: AccountDeletionFormProps) {
 
         <div className="text-sm text-emerald-900 dark:text-emerald-300 leading-relaxed space-y-2 pt-2 border-t border-emerald-200/60 dark:border-emerald-800/60">
           <p>
-            Your account deletion request for <strong>{app.metadata.name}</strong> has been logged into our queue.
+            Your account deletion request for <strong>{app.metadata.name}</strong> has been received. We may contact you at your registered email address (<strong>{email}</strong>) if additional verification is required.
           </p>
           <p className="text-xs text-emerald-800 dark:text-emerald-400">
-            <strong>What happens next?</strong> To prevent unauthorized account deletion, a verification message will be sent to <strong>{email}</strong>. Once identity is verified, your account credentials, profile data, and associated Cloud Firestore / Supabase stored records will be permanently removed within <strong>{app.accountDeletion.processingTime}</strong>.
+            Requests are securely verified and processed as soon as reasonably possible.
           </p>
         </div>
 
@@ -233,8 +233,8 @@ export function AccountDeletionForm({ app }: AccountDeletionFormProps) {
       </button>
 
       {/* Transparent Processing Note */}
-      <p className="text-center text-[11px] text-slate-500 dark:text-slate-400">
-        Stage 1 Processing Notice: Your request will be queued for manual identity verification. You will receive confirmation at your registered email within {app.accountDeletion.processingTime}.
+      <p className="text-center text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
+        You can submit a request to delete your {app.metadata.name} account and associated data through this page. Requests are securely verified and processed as soon as reasonably possible.
       </p>
     </form>
   );

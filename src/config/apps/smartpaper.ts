@@ -12,13 +12,13 @@ export const smartPaperConfig: AppConfig = {
     effectiveDate: "August 8, 2026",
     lastUpdated: "August 8, 2026",
     platform: "Android",
+    published: false,
   },
   developer: {
-    name: "Karan",
+    name: "Karan Saini",
     companyName: "SmartPaper App",
-    email: "smartpaper@pythonwithkaran.com",
-    supportEmail: "support@pythonwithkaran.com",
-    website: "https://pythonwithkaran.com",
+    email: "pythonwithkaran.official@gmail.com",
+    supportEmail: "pythonwithkaran.official@gmail.com",
     jurisdiction: "India",
   },
   privacy: {
@@ -64,6 +64,6 @@ export const smartPaperConfig: AppConfig = {
     deletedDataTypes: ["Local document cache", "App preferences"],
     retainedDataTypes: [],
     processingTime: "Instant (local uninstall)",
-    supportEmail: "support@pythonwithkaran.com",
+    supportEmail: "pythonwithkaran.official@gmail.com",
   },
 };

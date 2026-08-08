@@ -19,6 +19,7 @@ export interface AppMetadata {
   effectiveDate: string;
   lastUpdated: string;
   platform: "Android" | "Cross-platform" | "iOS & Android";
+  published: boolean;
 }
 
 export interface DataCollectionItem {

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ShieldCheck, Mail, Globe, Scale } from "lucide-react";
+import { ShieldCheck, Mail, User, Scale } from "lucide-react";
 import { getAllApps } from "@/config/apps";
 
 export function Footer() {
@@ -26,10 +26,10 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Column 2: Applications & Legal Links */}
+          {/* Column 2: Published Applications & Legal Links */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-slate-200">
-              Applications
+              Published Applications
             </h4>
             <ul className="space-y-2 text-xs">
               {apps.map((app) => (
@@ -71,17 +71,17 @@ export function Footer() {
             </h4>
             <div className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
               <div className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-slate-400" />
-                <a
-                  href="mailto:support@pythonwithkaran.com"
-                  className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                >
-                  support@pythonwithkaran.com
-                </a>
+                <User className="w-3.5 h-3.5 text-slate-400" />
+                <span>Karan Saini</span>
               </div>
               <div className="flex items-center gap-2">
-                <Globe className="w-3.5 h-3.5 text-slate-400" />
-                <span>PythonWithKaran</span>
+                <Mail className="w-3.5 h-3.5 text-slate-400" />
+                <a
+                  href="mailto:pythonwithkaran.official@gmail.com"
+                  className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >
+                  pythonwithkaran.official@gmail.com
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Scale className="w-3.5 h-3.5 text-slate-400" />
@@ -96,7 +96,7 @@ export function Footer() {
               Legal Notice
             </h4>
             <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed">
-              These legal documents govern the mobile applications published by the developer. Policies are updated periodically to remain compliant with Google Play Console Developer Policies and applicable data protection regulations.
+              These legal documents govern the mobile applications published by developer Karan Saini. Policies are updated periodically to remain compliant with Google Play Console Developer Policies and applicable data protection regulations.
             </p>
           </div>
         </div>
@@ -104,7 +104,7 @@ export function Footer() {
         {/* Bottom copyright */}
         <div className="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 dark:text-slate-500 gap-4">
           <div>
-            © {currentYear} PythonWithKaran. All rights reserved.
+            © {currentYear} Karan Saini (PythonWithKaran). All rights reserved.
           </div>
           <div className="flex items-center gap-4">
             <Link href="/" className="hover:text-slate-600 dark:hover:text-slate-300">
