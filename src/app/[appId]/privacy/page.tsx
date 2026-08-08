@@ -257,7 +257,7 @@ export default function PrivacyPolicyPage({
           {/* 8. Children's Privacy */}
           <section id="childrens-privacy" className="space-y-3 scroll-mt-24">
             <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100 pb-2 border-b border-slate-100 dark:border-slate-800">
-              8. Children's Privacy Notice
+              8. Children&apos;s Privacy Notice
             </h2>
             <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
               {app.privacy.childrensPrivacy}

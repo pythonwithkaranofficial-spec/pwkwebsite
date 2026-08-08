@@ -143,13 +143,13 @@ export default function HomePage() {
             <strong className="text-slate-800 dark:text-slate-200 font-semibold block">
               2. App-Specific Data Practices
             </strong>
-            Disclosures accurately reflect each app's genuine SDKs, Firebase services, and database usage.
+            Disclosures accurately reflect each app&apos;s genuine SDKs, Firebase services, and database usage.
           </div>
           <div className="space-y-1">
             <strong className="text-slate-800 dark:text-slate-200 font-semibold block">
               3. External Account Deletion URL
             </strong>
-            Satisfies Google's requirement for a dedicated external web resource to request account and data removal.
+            Satisfies Google&apos;s requirement for a dedicated external web resource to request account and data removal.
           </div>
         </div>
       </div>
