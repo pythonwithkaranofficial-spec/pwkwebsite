@@ -1,10 +1,16 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAppConfig } from "@/config/apps";
+import { getAppConfig, getAllApps } from "@/config/apps";
 import { TableOfContents, TocItem } from "@/components/TableOfContents";
 import { FileText, Mail, Calendar } from "lucide-react";
 import { Metadata } from "next";
+
+export function generateStaticParams() {
+  return getAllApps().map((app) => ({
+    appId: app.metadata.id,
+  }));
+}
 
 export async function generateMetadata({
   params,

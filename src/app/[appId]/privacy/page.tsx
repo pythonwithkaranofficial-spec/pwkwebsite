@@ -1,10 +1,16 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAppConfig } from "@/config/apps";
+import { getAppConfig, getAllApps } from "@/config/apps";
 import { TableOfContents, TocItem } from "@/components/TableOfContents";
 import { ShieldCheck, Mail, Globe, ExternalLink, Calendar, CheckCircle2, Lock, Smartphone } from "lucide-react";
 import { Metadata } from "next";
+
+export function generateStaticParams() {
+  return getAllApps().map((app) => ({
+    appId: app.metadata.id,
+  }));
+}
 
 export async function generateMetadata({
   params,
@@ -75,7 +81,7 @@ export default function PrivacyPolicyPage({
               <strong className="text-slate-900 dark:text-slate-200">Last Updated:</strong> {app.metadata.lastUpdated}
             </div>
             <div>
-              <strong className="text-slate-900 dark:text-slate-200">Developer:</strong> {app.developer.companyName || app.developer.name}
+              <strong className="text-slate-900 dark:text-slate-200">Developer:</strong> {app.developer.name || app.developer.companyName}
             </div>
           </div>
         </div>
@@ -309,7 +315,7 @@ export default function PrivacyPolicyPage({
             </p>
             <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 text-xs text-slate-700 dark:text-slate-300 space-y-1 font-mono">
               <div><strong>Application:</strong> {app.metadata.name}</div>
-              <div><strong>Developer / Company:</strong> {app.developer.companyName || app.developer.name}</div>
+              <div><strong>Developer / Company:</strong> {app.developer.name || app.developer.companyName}</div>
               <div><strong>Privacy Email:</strong> {app.developer.email}</div>
               <div><strong>Support Email:</strong> {app.developer.supportEmail}</div>
               <div><strong>Jurisdiction:</strong> {app.developer.jurisdiction}</div>

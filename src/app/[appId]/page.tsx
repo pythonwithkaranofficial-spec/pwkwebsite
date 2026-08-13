@@ -1,9 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAppConfig } from "@/config/apps";
+import { getAppConfig, getAllApps } from "@/config/apps";
 import { ShieldCheck, FileText, Trash2, ArrowRight, ExternalLink, Calendar, Code, Mail } from "lucide-react";
 import { Metadata } from "next";
+
+export function generateStaticParams() {
+  return getAllApps().map((app) => ({
+    appId: app.metadata.id,
+  }));
+}
 
 export async function generateMetadata({
   params,
