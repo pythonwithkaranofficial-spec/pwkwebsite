@@ -22,7 +22,7 @@ export async function generateMetadata({
 
   return {
     title: `${app.metadata.name} Privacy Policy`,
-    description: `Official Privacy Policy for ${app.metadata.name} (${app.metadata.packageName}). Details data collection, Firebase, Supabase, YouTube APIs, and user data rights.`,
+    description: `Official Privacy Policy for ${app.metadata.name} (${app.metadata.packageName}). Details data collection, third-party SDKs, security practices, and user privacy rights.`,
   };
 }
 
@@ -98,7 +98,7 @@ export default function PrivacyPolicyPage({
             href={`/${app.metadata.id}/delete-account`}
             className="px-3 py-1.5 rounded-lg bg-red-50 hover:bg-red-100 dark:bg-red-950/50 dark:hover:bg-red-900/50 text-red-600 dark:text-red-400 transition-colors"
           >
-            Account Deletion Web Page
+            Data & Account Deletion Page
           </Link>
         </div>
       </div>
@@ -128,7 +128,7 @@ export default function PrivacyPolicyPage({
               2. Information We Collect
             </h2>
             <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-              We collect information to provide, personalize, and synchronize educational features across your devices. The table below specifies the exact data types collected by <strong>{app.metadata.name}</strong>:
+              We outline below the data practices, categories, and identifiers associated with <strong>{app.metadata.name}</strong>:
             </p>
 
             <div className="space-y-4">
@@ -142,7 +142,7 @@ export default function PrivacyPolicyPage({
                       {group.category}
                     </h3>
                     <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-900/60 text-blue-700 dark:text-blue-300">
-                      {group.isRequired ? "Required for Auth" : "Optional Sync"}
+                      {group.isRequired ? "Required / Core" : "Optional / Local"}
                     </span>
                   </div>
 
@@ -181,7 +181,7 @@ export default function PrivacyPolicyPage({
               4. Third-Party SDKs & Service Providers
             </h2>
             <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-              <strong>{app.metadata.name}</strong> integrates official third-party SDKs and cloud services to enable authentication, content delivery, and app performance. We do not sell your personal information.
+              <strong>{app.metadata.name}</strong> integrates third-party SDKs and service providers to enable core capabilities and advertising support. We do not sell your personal information.
             </p>
 
             <div className="grid grid-cols-1 gap-3">
@@ -247,14 +247,16 @@ export default function PrivacyPolicyPage({
               7. Account & Data Deletion Rights
             </h2>
             <p className="text-sm text-red-900 dark:text-red-300 leading-relaxed">
-              Users have the right to request deletion of their account and associated data. You can request deletion directly inside the app menu or through our dedicated external account deletion web resource:
+              {app.accountDeletion.supportsAccountCreation
+                ? "Users have the right to request deletion of their account and associated cloud data directly within the app or through our dedicated external account deletion web portal:"
+                : "Users can delete all locally stored preferences, quiz records, and element bookmarks at any time by clearing application data in device settings or uninstalling the application. Learn more on our dedicated data safety page:"}
             </p>
             <div className="pt-2">
               <Link
                 href={`/${app.metadata.id}/delete-account`}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-red-600 hover:bg-red-700 text-white font-semibold text-xs shadow-sm transition-colors"
               >
-                <span>Go to Account Deletion Request Page</span>
+                <span>{app.accountDeletion.supportsAccountCreation ? "Go to Account Deletion Request Page" : "View Data Deletion & Storage Disclosures"}</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -291,7 +293,7 @@ export default function PrivacyPolicyPage({
               10. International Data Transfers
             </h2>
             <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-              {app.privacy.internationalTransfers || "Your information may be stored on secure cloud servers operated by Google Firebase and Supabase in international datacenters."}
+              {app.privacy.internationalTransfers || "Data processed by third-party service providers (such as Google AdMob) may be handled across secure international datacenters in accordance with their respective privacy policies."}
             </p>
           </section>
 

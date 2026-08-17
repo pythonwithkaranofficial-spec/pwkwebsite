@@ -1,11 +1,13 @@
 import { AppConfig } from "@/types/app-config";
 import { pythonWithKaranConfig } from "./pythonwithkaran";
 import { smartPaperConfig } from "./smartpaper";
+import { periodicTableExplorerConfig } from "./periodictableexplorer";
 
 // Registry of all registered applications
 export const appsRegistry: Record<string, AppConfig> = {
   pythonwithkaran: pythonWithKaranConfig,
   smartpaper: smartPaperConfig,
+  periodictableexplorer: periodicTableExplorerConfig,
 };
 
 // Returns only currently published apps (used in public app directory, header, and footer)

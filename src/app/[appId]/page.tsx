@@ -22,7 +22,7 @@ export async function generateMetadata({
   }
   return {
     title: `${app.metadata.name} — Legal & Privacy Hub`,
-    description: `Official Privacy Policy, Terms of Service, and Account Deletion portal for ${app.metadata.name}.`,
+    description: `Official Privacy Policy, Terms of Service, and Data Safety portal for ${app.metadata.name}.`,
   };
 }
 
@@ -32,6 +32,8 @@ export default function AppHubPage({ params }: { params: { appId: string } }) {
   if (!app) {
     notFound();
   }
+
+  const supportsAccounts = app.accountDeletion.supportsAccountCreation;
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8">
@@ -92,7 +94,7 @@ export default function AppHubPage({ params }: { params: { appId: string } }) {
                   Privacy Policy
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                  Detailed breakdown of data collection, Firebase authentication, Supabase storage, YouTube APIs, and user data rights.
+                  Comprehensive breakdown of data collection, third-party services, local storage, security practices, and user rights.
                 </p>
               </div>
             </div>
@@ -105,7 +107,7 @@ export default function AppHubPage({ params }: { params: { appId: string } }) {
           {/* Terms & Conditions Card */}
           <Link
             href={`/${app.metadata.id}/terms`}
-            className="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-blue-500 transition-all duration-200 flex flex-col justify-between space-y-4"
+            className="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-purple-500 transition-all duration-200 flex flex-col justify-between space-y-4"
           >
             <div className="space-y-3">
               <div className="w-10 h-10 rounded-xl bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 flex items-center justify-center font-bold">
@@ -116,7 +118,7 @@ export default function AppHubPage({ params }: { params: { appId: string } }) {
                   Terms & Conditions
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                  User agreement covering account usage, educational material copyright, YouTube player terms, and user obligations.
+                  User agreement covering application usage, content accuracy, intellectual property, and terms of service.
                 </p>
               </div>
             </div>
@@ -126,7 +128,7 @@ export default function AppHubPage({ params }: { params: { appId: string } }) {
             </div>
           </Link>
 
-          {/* Account Deletion Card */}
+          {/* Account / Data Deletion Card */}
           <Link
             href={`/${app.metadata.id}/delete-account`}
             className="group bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-red-500 transition-all duration-200 flex flex-col justify-between space-y-4"
@@ -137,15 +139,17 @@ export default function AppHubPage({ params }: { params: { appId: string } }) {
               </div>
               <div>
                 <h3 className="font-bold text-base text-slate-900 dark:text-slate-100 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
-                  Account Deletion Request
+                  {supportsAccounts ? "Account Deletion Request" : "Data Safety & Deletion"}
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
-                  External account and data deletion request portal compliant with Google Play Console requirements.
+                  {supportsAccounts
+                    ? "External account and data deletion request portal compliant with Google Play Console requirements."
+                    : "Overview of local device storage practices, zero-account architecture, and data deletion instructions."}
                 </p>
               </div>
             </div>
             <div className="flex items-center gap-1.5 text-xs font-semibold text-red-600 dark:text-red-400 pt-2">
-              <span>Request Deletion</span>
+              <span>{supportsAccounts ? "Request Deletion" : "View Disclosures"}</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </div>
           </Link>
