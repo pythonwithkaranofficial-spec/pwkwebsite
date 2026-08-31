@@ -6,11 +6,12 @@ export const pythonWithKaranConfig: AppConfig = {
     name: "PythonWithKaran",
     packageName: "com.pwk.pythonwithkaran",
     category: "Educational",
-    description: "Learn. Code. Excel. A Flutter educational app delivering computer science, IT, IP & AI study notes, video tutorials, MCQs, and previous year question papers for CBSE Classes 9–12 students.",
+    description:
+      "Learn. Code. Excel. A Flutter educational app delivering computer science, IT, IP & AI study notes, video tutorials, MCQs, and previous year question papers for CBSE Classes 9–12 students.",
     logoUrl: "/apps/pythonwithkaran/logo.png",
     version: "1.0.0",
     effectiveDate: "August 13, 2026",
-    lastUpdated: "August 13, 2026",
+    lastUpdated: "August 31, 2026",
     platform: "Android",
     published: true,
   },
@@ -23,88 +24,104 @@ export const pythonWithKaranConfig: AppConfig = {
   },
   privacy: {
     introduction:
-      "PythonWithKaran ('we', 'our', or 'us') is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application 'PythonWithKaran' (Package Name: com.pwk.pythonwithkaran). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access or use the application.",
+      "PythonWithKaran ('we', 'our', or 'us') is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application 'PythonWithKaran' (Package Name: com.pwk.pythonwithkaran). PythonWithKaran is built with an instant-access, local-first architecture: no user registration required, zero cloud account profiles, and fast on-device storage for your learning journey.",
     dataCollection: [
       {
-        category: "Account & Profile Information",
-        items: ["Email address", "Display name", "Profile avatar / picture (optional upload)"],
-        purpose: "To register your user account, authenticate access via Firebase Authentication, and personalize your profile within the app.",
-        isRequired: true,
-        sharedWithThirdParties: false,
-      },
-      {
-        category: "Educational Progress & App Activity",
-        items: ["Quiz/MCQ scores and completion history", "Completed study chapters and topic bookmarks", "Video watch history and favorites", "User preferences and settings"],
-        purpose: "To synchronize your learning achievements across devices via Cloud Firestore and provide personalized study analytics.",
+        category: "Local Device Preferences & Avatar (Optional / Local Only)",
+        items: [
+          "Display name / student nickname (stored locally on device)",
+          "Profile avatar / icon choice (stored locally on device)",
+        ],
+        purpose:
+          "PythonWithKaran does not require user accounts, email registration, or passwords. Any profile name or avatar icon set within the app is stored strictly on your local device (via Hive local storage) and is never transmitted to our servers or third parties.",
         isRequired: false,
         sharedWithThirdParties: false,
       },
       {
-        category: "Technical Identifiers & Offline Cache",
-        items: ["Firebase Auth authentication token", "Local Hive cache storage keys", "App performance and crash diagnostic logs"],
-        purpose: "To maintain secure active sessions, speed up PDF notes loading, enable offline caching, and improve app stability.",
-        isRequired: true,
+        category: "Educational Progress & App Activity (Local Storage)",
+        items: [
+          "Quiz/MCQ scores and completion history",
+          "Completed study chapters and topic bookmarks",
+          "Video watch history and favorites list",
+          "User preferences and study settings",
+        ],
+        purpose:
+          "Quiz scores, completed chapters, bookmarks, and video watch history are saved directly on the user's local device storage (via Hive) for fast offline access. This data is never uploaded to remote cloud databases.",
+        isRequired: false,
         sharedWithThirdParties: false,
+      },
+      {
+        category: "Third-Party Advertising & Technical Identifiers (Google AdMob)",
+        items: [
+          "Device identifiers (e.g., Google Advertising ID / AAID)",
+          "User Messaging Platform (UMP) consent status",
+          "IP address (used strictly for country-level ad serving and fraud prevention)",
+          "Anonymous app performance and crash diagnostic logs",
+          "Local Hive cache storage keys (to speed up offline PDF notes and syllabus access)",
+        ],
+        purpose:
+          "To support ongoing maintenance and provide free educational content to CBSE students, the app serves advertisements via Google Mobile Ads (AdMob) and utilizes local caching for high performance.",
+        isRequired: true,
+        sharedWithThirdParties: true,
       },
     ],
     thirdPartyServices: [
       {
-        name: "Firebase Authentication",
+        name: "Google Mobile Ads (AdMob)",
         provider: "Google LLC",
-        purpose: "Handles user login, passwordless email-link sign in, Google Sign-In verification, and session token security.",
-        privacyPolicyUrl: "https://policies.google.com/privacy",
+        purpose:
+          "Serves banner, interstitial, and rewarded advertisements, and manages advertising identifiers (AAID) and user consent (UMP).",
+        privacyPolicyUrl: "https://policies.google.com/technologies/ads",
       },
       {
-        name: "Cloud Firestore",
+        name: "Google Firebase",
         provider: "Google LLC",
-        purpose: "Stores user profiles, roles, course structures, chapters, and progress records securely in the cloud.",
+        purpose:
+          "Collects anonymous diagnostic logs, crash reports, and aggregate usage analytics to maintain app stability.",
         privacyPolicyUrl: "https://firebase.google.com/support/privacy",
       },
       {
-        name: "Supabase Storage & Database",
+        name: "Supabase",
         provider: "Supabase Inc.",
-        purpose: "Hosts educational PDF notes, chapter material assets, and optional user profile avatars.",
+        purpose:
+          "Hosts public educational PDF notes, chapter materials, and syllabus files.",
         privacyPolicyUrl: "https://supabase.com/privacy",
       },
       {
-        name: "YouTube Data API & Player",
+        name: "YouTube API Services",
         provider: "Google LLC / YouTube",
-        purpose: "Streams educational video lessons and Shorts directly within the app.",
+        purpose:
+          "Streams educational tutorial videos and Shorts directly in-app.",
         privacyPolicyUrl: "https://www.youtube.com/t/terms",
-      },
-      {
-        name: "Firebase Analytics",
-        provider: "Google LLC",
-        purpose: "Collects aggregated, anonymous app usage metrics to diagnose crashes and optimize educational feature performance.",
-        privacyPolicyUrl: "https://firebase.google.com/support/privacy",
       },
     ],
     dataUsePurposes: [
       "Provide, maintain, and improve the PythonWithKaran educational platform.",
-      "Authenticate user logins and protect account security.",
-      "Sync quiz progress, bookmarks, and video history across your devices.",
-      "Deliver CBSE-aligned notes, MCQs, and video tutorials efficiently.",
+      "Deliver CBSE-aligned notes, MCQs, syllabus files, and video tutorials efficiently.",
+      "Save quiz progress, bookmarks, and video history strictly on local device storage (Hive cache).",
+      "Display family-safe advertisements via Google Mobile Ads (AdMob) to keep educational resources freely available to all students.",
+      "Provide optional Rewarded Video Ads allowing users to unlock detailed quiz solutions and explanations.",
       "Respond to student support requests and technical inquiries.",
-      "Detect, prevent, and address technical bugs or unauthorized app activity.",
+      "Detect, prevent, and address technical bugs or crash reports to ensure high app performance.",
     ],
     dataRetentionPolicy:
-      "We retain user personal data (such as account credentials and learning progress) for as long as your account remains active. If you request account deletion, all personal profile records, stored avatars, and quiz progress will be securely erased from Cloud Firestore and Supabase Storage after identity verification.",
+      "Because PythonWithKaran operates without remote server accounts, you have complete control over your data. All student progress, quiz history, and offline caches are stored locally on your device (via Hive) and are retained only as long as the application remains installed. Clearing app storage in your device Settings or uninstalling the app permanently erases all local data immediately.",
     securityPractices: [
-      "All network communication between the app and servers is encrypted in transit using standard HTTPS/TLS protocols.",
-      "Authentication tokens are managed through secure Firebase Authentication SDKs.",
-      "Cloud Firestore and Supabase access control rules enforce strict user-level data isolation.",
-      "No plain-text passwords or secret credentials are ever stored on user devices or client applications.",
+      "Zero Cloud Account Databases: PythonWithKaran does not store user profiles, passwords, or personal credentials on cloud servers.",
+      "Local Sandbox Storage: Study progress, avatar preferences, and quiz history are isolated within the device's secure local Hive storage.",
+      "Encrypted Data in Transit: All network requests for educational notes (Supabase) and ads (Google AdMob) use secure HTTPS/TLS encryption.",
+      "Minimal System Permissions: The app requests only network permissions strictly necessary for loading public educational materials and advertisements.",
     ],
     childrensPrivacy:
       "PythonWithKaran is designed for students studying CBSE Computer Science, IT, IP, and AI courses (typically ages 13 and above). We do not knowingly collect personal information from children under 13 without parental/guardian consent. If we learn that we have collected personal data from a child under 13 without verification, we will promptly delete that information.",
     userRights: [
-      "Access: You have the right to request access to the personal data we hold about you.",
-      "Correction: You can update your display name and profile image directly inside the application settings.",
-      "Deletion: You can request complete account and data deletion at any time via the in-app menu or our dedicated account deletion web portal.",
-      "Objection/Opt-Out: You can log out of the application to suspend active cloud data synchronization.",
+      "Local Data Erasure: You can erase all local study progress, quiz history, and cached PDFs at any time simply by clearing the app's cache/storage in your device Settings or by uninstalling the app.",
+      "Ad Personalization Opt-Out: You can manage or reset your advertising ID and opt out of personalized ads via your device's Google Settings > Ads or by visiting https://adssettings.google.com.",
+      "Offline Study Access: Full access to cached chapter notes and offline quizzes without requiring any internet connection or user login.",
+      "Support Inquiries: Contact us at pythonwithkaran.official@gmail.com for any privacy questions or assistance.",
     ],
     internationalTransfers:
-      "Your information may be transferred to and maintained on cloud servers operated by Google Cloud (Firebase) and Supabase located outside your state or country. By using the app, you consent to this transfer.",
+      "Because PythonWithKaran does not operate remote user account servers, no personal profile data is transferred across borders. Content delivery and advertising requests (Supabase, YouTube, Google AdMob) are processed across their respective secure global networks in accordance with their privacy policies.",
     changesToPolicy:
       "We may update our Privacy Policy from time to time. We will notify you of any changes by updating the 'Last Updated' date at the top of this policy and posting the updated policy on our website.",
   },
@@ -116,7 +133,7 @@ export const pythonWithKaranConfig: AppConfig = {
         id: "acceptance",
         title: "1. Acceptance of Terms",
         content:
-          "By creating an account or using PythonWithKaran, you confirm that you have read, understood, and agreed to these Terms and our Privacy Policy. If you do not agree to these terms, you must refrain from using the application.",
+          "By installing, accessing, or using PythonWithKaran, you confirm that you have read, understood, and agreed to these Terms and our Privacy Policy. If you do not agree to these terms, you must refrain from using the application.",
       },
       {
         id: "eligibility",
@@ -125,10 +142,10 @@ export const pythonWithKaranConfig: AppConfig = {
           "PythonWithKaran is intended primarily for high school students, educators, and self-learners studying Computer Science, Information Technology, Informatics Practices, and Artificial Intelligence. Users under 18 must use the app with parent or legal guardian guidance.",
       },
       {
-        id: "account-registration",
-        title: "3. Account Registration & Security",
+        id: "instant-access",
+        title: "3. Instant Access (No Account Required)",
         content:
-          "To access cloud synchronization, quizzes, and personalized notes, you must register an account using a valid email address or supported third-party provider (Google Sign-In). You are responsible for maintaining the confidentiality of your login credentials.",
+          "PythonWithKaran is designed as an instant-access educational companion. You do not need to register an account or provide login credentials to access syllabus notes, previous year question papers (PYQs), video lessons, or chapter quizzes.",
       },
       {
         id: "educational-content",
@@ -148,7 +165,7 @@ export const pythonWithKaranConfig: AppConfig = {
         content: [
           "Scraping, copying, or bulk downloading study material or PDF notes for re-distribution or commercial sale.",
           "Attempting to reverse engineer, decompile, or tamper with the application binary or network communication.",
-          "Attempting to bypass security mechanisms or gain unauthorized admin access to Firestore/Supabase databases.",
+          "Using automated bots, emulators, or ad-clicking scripts to artificially manipulate AdMob advertising impressions or rewarded ad features.",
           "Impersonating another student, educator, or developer.",
         ],
       },
@@ -160,9 +177,9 @@ export const pythonWithKaranConfig: AppConfig = {
       },
       {
         id: "user-generated-progress",
-        title: "8. User Progress & Data Storage",
+        title: "8. Local Data Storage & Offline Caching",
         content:
-          "Your quiz progress, favorites, and watch history are synchronized using Cloud Firestore and local Hive cache. PythonWithKaran is not liable for data loss arising from device loss, unauthorized password sharing, or third-party service outages.",
+          "User quiz history, bookmarked topics, and reading positions are stored locally on your device using local caching mechanisms (Hive). PythonWithKaran is not responsible for data loss resulting from device resets, manual storage clearing, or device changes.",
       },
       {
         id: "modifications-to-service",
@@ -177,42 +194,45 @@ export const pythonWithKaranConfig: AppConfig = {
           "To the fullest extent permitted by applicable law, PythonWithKaran and its creator shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your access to or use of the application.",
       },
       {
-        id: "account-deletion-terms",
-        title: "11. Account Deletion & Termination",
+        id: "data-reset-termination",
+        title: "11. Data Reset & Termination of Use",
         content:
-          "You may request account deletion at any time via the app settings or the web portal. PythonWithKaran reserves the right to suspend or terminate accounts that violate these Terms or engage in fraudulent activity.",
+          "You may discontinue use of the App at any time. To remove all locally stored progress, bookmarks, and preferences, you can clear app storage from your device settings or uninstall the App.",
+      },
+      {
+        id: "advertisements",
+        title: "12. Advertisements & Sponsored Content",
+        content:
+          "PythonWithKaran is supported by third-party advertisements served via Google AdMob. Certain features, such as unlocking detailed quiz solutions, may offer optional rewarded video advertisements.",
       },
       {
         id: "governing-law",
-        title: "12. Governing Law & Jurisdiction",
+        title: "13. Governing Law & Jurisdiction",
         content:
           "These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions.",
       },
       {
         id: "contact-terms",
-        title: "13. Contact Information",
+        title: "14. Contact Information",
         content:
           "For any legal questions, copyright inquiries, or support requests regarding these Terms, please contact us at pythonwithkaran.official@gmail.com.",
       },
     ],
   },
   accountDeletion: {
-    supportsAccountCreation: true,
-    inAppDeletionPath: "Open PythonWithKaran app -> Profile tab -> Tap Settings icon -> Select 'Delete Account'",
+    supportsAccountCreation: false,
+    inAppDeletionPath:
+      "No account required (Instant access / Zero sign-up architecture). All study progress, bookmarks, and cached files are stored locally on your device. To erase all data immediately, go to Android Settings -> Apps -> PythonWithKaran -> Storage -> Clear Data / Clear Storage, or uninstall the app from your device.",
     deletedDataTypes: [
-      "User authentication record (Firebase Auth account & credentials)",
-      "Registered email address and display name",
-      "User profile document in Cloud Firestore",
-      "Uploaded profile photo avatar from Supabase Storage",
+      "Local Hive cache records (display name and avatar choice)",
       "Quiz completion history, MCQ scores, and chapter progress",
       "Bookmarked notes and saved video favorites list",
+      "Locally cached PDF study materials and syllabus documents",
     ],
-    retainedDataTypes: [
-      "Anonymous, aggregated app performance statistics (non-personally identifiable)",
-      "Temporary security & rate-limiting logs (retained temporarily if legally required)",
-    ],
-    retentionReason: "Security logs and fraud prevention records are retained temporarily as required by cybersecurity best practices.",
-    processingTime: "Requests are securely verified and processed as soon as reasonably possible.",
+    retainedDataTypes: [],
+    retentionReason:
+      "PythonWithKaran does not collect, transmit, or retain any personal data on cloud servers. No remote data is retained.",
+    processingTime: "Instant (Local device action / Uninstallation)",
     supportEmail: "pythonwithkaran.official@gmail.com",
   },
 };
