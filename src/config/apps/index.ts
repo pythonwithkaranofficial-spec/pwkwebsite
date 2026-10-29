@@ -4,6 +4,7 @@ import { smartPaperConfig } from "./smartpaper";
 import { periodicTableExplorerConfig } from "./periodictableexplorer";
 import { ncertMathFormulasHubConfig } from "./ncertmathformulashub";
 import { purpleMonsterConfig } from "./purplemonster";
+import { fontzyleConfig } from "./fontzyle";
 
 // Registry of all registered applications
 export const appsRegistry: Record<string, AppConfig> = {
@@ -12,6 +13,7 @@ export const appsRegistry: Record<string, AppConfig> = {
   periodictableexplorer: periodicTableExplorerConfig,
   ncertmathformulashub: ncertMathFormulasHubConfig,
   purplemonster: purpleMonsterConfig,
+  fontzyle: fontzyleConfig,
 };
 
 // Returns only currently published apps (used in public app directory, header, and footer)
