@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mithai Merge: 2048 Puzzle — Privacy Policy & Data Safety Disclosures</title>
+  <meta name="description" content="Official Privacy Policy, Technical Privacy Audit, and Google Play Console Data Safety declarations for Mithai Merge: 2048 Puzzle (com.mithaimerge.mithai_merge)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-page: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-subtle: #172033;
+      --border-color: #334155;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --primary: #f59e0b;
+      --primary-glow: rgba(245, 158, 11, 0.15);
+      --accent: #3b82f6;
+      --success: #10b981;
+      --success-glow: rgba(16, 185, 129, 0.15);
+      --danger: #ef4444;
+      --mono: 'JetBrains Mono', monospace;
+      --sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--sans);
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container {
+      max-width: 940px;
+      margin: 0 auto;
+    }
+
+    /* Header Card */
+    .header-card {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-card::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: #fbbf24;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 100px;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.25rem;
+    }
+
+    .meta-item {
+      font-size: 0.85rem;
+    }
+
+    .meta-label {
+      color: var(--text-dim);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .meta-val {
+      color: var(--text-main);
+      font-weight: 600;
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      word-break: break-all;
+    }
+
+    /* Content Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    code {
+      font-family: var(--mono);
+      background: #0f172a;
+      color: #f59e0b;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.85em;
+      border: 1px solid #334155;
+    }
+
+    /* Data Safety Table */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 1.25rem 0;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.875rem;
+    }
+
+    th {
+      background: var(--bg-card-subtle);
+      color: #ffffff;
+      padding: 12px 16px;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border-color);
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: var(--mono);
+    }
+
+    .pill-yes {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .pill-no {
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    .callout {
+      background: rgba(59, 130, 246, 0.08);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin: 1.25rem 0;
+    }
+
+    .callout-title {
+      font-weight: 700;
+      color: #60a5fa;
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+    }
+
+    .callout p {
+      margin-bottom: 0;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding-top: 2rem;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    .footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.75rem 3rem;
+      }
+      .header-card {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+      .card {
+        padding: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header-card">
+      <div class="badge">Official Compliance Document</div>
+      <h1>Mithai Merge: 2048 Puzzle</h1>
+      <p class="subtitle">Complete Privacy Policy, Technical Architecture Audit & Google Play Console Data Safety Checklist</p>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <div class="meta-label">Application Name</div>
+          <div class="meta-val">Mithai Merge: 2048 Puzzle</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Package Identifier</div>
+          <div class="meta-val">com.mithaimerge.mithai_merge</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Developer / Publisher</div>
+          <div class="meta-val">Mithai Merge Studio</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Effective Date</div>
+          <div class="meta-val">October 29, 2026</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Support Email</div>
+          <div class="meta-val">officialworldwithtechnology@gmail.com</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Target SDK / Min SDK</div>
+          <div class="meta-val">Android 16 (SDK 36) / SDK 21</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1: Privacy Policy -->
+    <div class="card">
+      <h2>1. Introduction</h2>
+      <p>Welcome to <strong>Mithai Merge: 2048 Puzzle</strong> (&quot;we&quot;, &quot;our&quot;, or &quot;the App&quot;), published by Mithai Merge Studio. We respect your privacy and are committed to protecting any information associated with your use of our mobile application.</p>
+      <p>This Privacy Policy explains how our application operates, what information is processed, how third-party advertising partners interact with your device, and the rights and choices available to you under global privacy laws including the <strong>General Data Protection Regulation (GDPR)</strong>, the <strong>California Consumer Privacy Act (CCPA / CPRA)</strong>, the <strong>Children&#39;s Online Privacy Protection Act (COPPA)</strong>, and the <strong>Indian Digital Personal Data Protection Act (DPDP Act 2023)</strong>.</p>
+      <p>By installing and playing Mithai Merge, you understand and agree to the practices described in this policy.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. Zero-Login &amp; Local-First Architecture</h2>
+      <p>Mithai Merge is built from the ground up on a <strong>privacy-first, local-storage architecture</strong>:</p>
+      <ul>
+        <li><strong>No User Account Required:</strong> You do not need to register, log in, create a username, or provide an email address, phone number, or password to access any feature of the game.</li>
+        <li><strong>No Proprietary Cloud Servers:</strong> We do not operate proprietary game servers that log your identity, personal profile, or location.</li>
+        <li><strong>100% Local Game Storage:</strong> All gameplay progress, high scores, coins, unlocked themes, cosmetics, sound preferences, streaks, and Mithai Yatra campaign levels are saved exclusively on your local device sandbox storage (<code>getApplicationDocumentsDirectory</code> and <code>SharedPreferences</code>). If you uninstall the app or clear storage in Android device settings, your local progress will be completely deleted from the device.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. Information We Do NOT Collect</h2>
+      <p>We do <strong>not</strong> collect, store, access, or sell any of the following personal or sensitive information:</p>
+      <ul>
+        <li>❌ <strong>Personal Identifiers:</strong> No real name, postal address, email address, phone number, or government ID.</li>
+        <li>❌ <strong>Precise Geolocation:</strong> We do not request or use <code>ACCESS_FINE_LOCATION</code> or <code>ACCESS_COARSE_LOCATION</code> GPS permissions.</li>
+        <li>❌ <strong>Hardware Sensors &amp; Media:</strong> We do not access your device&#39;s camera, microphone, photos, media gallery, files, or contacts.</li>
+        <li>❌ <strong>Financial / Payment Information:</strong> The App does not contain in-app purchases (IAP) or real-money transactions. We do not collect credit cards, banking details, or financial accounts.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Permissions Requested by the App</h2>
+      <p>The App requests a strictly minimal set of Android system permissions, each tied to a direct, transparent function:</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>System Name</th>
+              <th>Exact Purpose &amp; Privacy Classification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Internet Access</strong></td>
+              <td><code>android.permission.INTERNET</code></td>
+              <td>Required by the Google Mobile Ads SDK (AdMob) to load advertisement inventory, render banner/interstitial/rewarded ads, and communicate with Google User Messaging Platform (UMP) for consent choices.</td>
+            </tr>
+            <tr>
+              <td><strong>Network State</strong></td>
+              <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+              <td>Allows the App to verify whether an active internet connection is available before attempting to request advertisement assets, preventing unnecessary battery and data drain.</td>
+            </tr>
+            <tr>
+              <td><strong>Vibration / Haptics</strong></td>
+              <td><code>android.permission.VIBRATE</code></td>
+              <td>Powers subtle tactile haptic feedback when tiles are merged, buttons are pressed, or power-ups are triggered. No personal data is accessed or transmitted.</td>
+            </tr>
+            <tr>
+              <td><strong>Google Advertising ID</strong></td>
+              <td><code>com.google.android.gms.permission.AD_ID</code></td>
+              <td>Declared on Android 13 (API level 33) and above to permit Google Play Services and Google AdMob to access the device&#39;s Google Advertising ID for ad frequency capping, fraud prevention, and personalized ad delivery based on explicit consent.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>5. Third-Party Services &amp; Automated Data Collection</h2>
+      <p>While we do not collect personal data directly, the App integrates vetted, industry-standard third-party SDKs to provide essential advertising and system features:</p>
+
+      <h3>A. Google AdMob &amp; Google User Messaging Platform (UMP)</h3>
+      <ul>
+        <li><strong>Service Provider:</strong> Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA).</li>
+        <li><strong>Purpose:</strong> Serving non-intrusive banner ads, occasional interstitial ads after game rounds, and optional rewarded ads that provide bonus in-game items (undos, shuffles, coins).</li>
+        <li><strong>Data Collected Automatically by Google AdMob:</strong>
+          <ul>
+            <li><strong>Device Identifiers:</strong> Google Advertising ID (AAID / AD_ID) and vendor identifiers.</li>
+            <li><strong>Approximate Location:</strong> Coarse, country/city-level geolocation derived solely from your IP address to deliver regionally relevant ad formats and appropriate language.</li>
+            <li><strong>Diagnostic &amp; Usage Data:</strong> Ad interaction data (impressions, clicks, ad load times, crash logs, and network latency) for fraud prevention, ad performance analytics, and billing verification.</li>
+          </ul>
+        </li>
+        <li><strong>Google AdMob Privacy Policy:</strong> <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: #60a5fa;">https://policies.google.com/technologies/ads</a></li>
+        <li><strong>Google Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: #60a5fa;">https://policies.google.com/privacy</a></li>
+      </ul>
+
+      <h3>B. Google Play In-App Review API</h3>
+      <ul>
+        <li><strong>Service Provider:</strong> Google LLC.</li>
+        <li><strong>Purpose:</strong> Enables users to submit ratings and reviews to the Google Play Store directly from an official system prompt within the App after achieving a positive milestone (e.g., winning a level or beating a personal high score). Prompts are capped once every 60 days via <code>ReviewService</code>.</li>
+        <li><strong>Data Handled:</strong> The review interface is hosted and executed securely by the Google Play Store client. No review content or user rating data is transmitted to or stored by our App.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>6. How Your Data Is Used</h2>
+      <p>Any data processed by our integrated SDKs is utilized strictly for the following legitimate purposes:</p>
+      <ol>
+        <li><strong>App Functionality:</strong> Maintaining offline game state, sound settings, theme customizations, and user interface preferences.</li>
+        <li><strong>Advertising &amp; Monetization:</strong> Delivering contextual or personalized banner, interstitial, and rewarded video ads to support free access to the game.</li>
+        <li><strong>Ad Frequency Capping &amp; Fraud Detection:</strong> Ensuring players do not see repetitive ads and preventing invalid ad click activity.</li>
+        <li><strong>Consent Management:</strong> Ensuring compliance with regional data privacy laws via Google&#39;s User Messaging Platform (UMP).</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>7. User Privacy Controls &amp; Consent Management</h2>
+      <p>We believe in putting players in complete control of their privacy:</p>
+
+      <h3>A. Updating Advertising Consent (GDPR / CCPA)</h3>
+      <p>You have the right to update or withdraw your advertising consent at any time:</p>
+      <ol>
+        <li>Open <strong>Mithai Merge</strong>.</li>
+        <li>Tap the <strong>Settings</strong> icon on the Home dashboard.</li>
+        <li>Scroll down to the <strong>Privacy &amp; Data</strong> section.</li>
+        <li>Tap <strong>&quot;Ad Privacy &amp; Consent&quot;</strong> to bring up the official Google UMP consent form where you can freely modify your choices regarding personalized advertising and vendor consent.</li>
+      </ol>
+
+      <h3>B. Resetting Your Advertising ID (Android System Settings)</h3>
+      <p>You can reset or delete your Google Advertising ID across all apps on your Android device:</p>
+      <ul>
+        <li>Navigate to: <strong>Settings &gt; Google &gt; Ads</strong> (or <strong>Settings &gt; Privacy &gt; Ads</strong> on newer Android versions).</li>
+        <li>Tap <strong>&quot;Reset advertising ID&quot;</strong> to generate a new anonymous identifier.</li>
+        <li>Tap <strong>&quot;Delete advertising ID&quot;</strong> to prevent apps from accessing your device advertising identifier altogether.</li>
+      </ul>
+
+      <h3>C. Resetting or Deleting All Game Data</h3>
+      <p>Since all gameplay data is stored exclusively on your device, you can delete 100% of your game progress, coins, and high scores at any time:</p>
+      <ul>
+        <li>In the App: Navigate to <strong>Settings &gt; Clear All Data</strong> and confirm.</li>
+        <li>On your Device: Go to <strong>Android Settings &gt; Apps &gt; Mithai Merge &gt; Storage &amp; Cache &gt; Clear Storage / Clear Data</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>8. International Compliance &amp; Legal Rights</h2>
+      <h3>A. European Union &amp; United Kingdom (GDPR / UK GDPR)</h3>
+      <p>Where required by law, Google AdMob processes your Advertising ID and device data based on your explicit consent obtained through the Google UMP consent dialogue upon initial app launch. Where consent is not required, processing relies on legitimate interests. You have the right to access, rectify, port, or erase your data, and the right to object to or restrict processing.</p>
+
+      <h3>B. California Residents (CCPA / CPRA)</h3>
+      <p>We do not sell your personal information. Third-party ad partners may collect identifiers (such as Advertising IDs) for cross-context behavioral advertising. You have the right to know what personal information is collected, the right to request deletion of your information, and the right to opt out of targeted advertising.</p>
+
+      <h3>C. Indian Players (DPDP Act 2023)</h3>
+      <p>In compliance with India&#39;s Digital Personal Data Protection Act, 2023, the App processes minimal device information solely for specified, lawful purposes (serving advertisements and managing local gameplay). Players may exercise their rights to correction, completion, and erasure of data by clearing app storage.</p>
+    </div>
+
+    <div class="card">
+      <h2>9. Children&#39;s Privacy (COPPA &amp; Google Play Families Policy)</h2>
+      <p>Mithai Merge is a general audience casual puzzle game intended for players aged <strong>13 and older</strong> (and families). We do not knowingly collect personal identifiable information from children under the age of 13 (or under 16 in certain European jurisdictions). Target age group is declared as 13 and older (General Audience), and the store listing is marked as not primarily directed at children under 13.</p>
+    </div>
+
+    <div class="card">
+      <h2>10. Data Security &amp; Encryption in Transit</h2>
+      <p>All communications between your device and Google AdMob or Google Play Services servers are strictly encrypted in transit using industry-standard <strong>Transport Layer Security (TLS 1.2 / TLS 1.3 / HTTPS)</strong> protocols. Local game files are stored within the secure Android application sandbox, isolated from other installed apps.</p>
+    </div>
+
+    <div class="card">
+      <h2>11. Data Retention Policy</h2>
+      <p><strong>Local App Data:</strong> Stored indefinitely on your local device until you choose to uninstall the application or manually clear storage in Android device settings.<br>
+      <strong>Third-Party Advertising Data:</strong> Advertising IDs and network telemetry collected by Google AdMob are retained in accordance with Google&#39;s standard data retention policies.</p>
+    </div>
+
+    <div class="card">
+      <h2>12. Contact Information</h2>
+      <p>For questions, feedback, or support regarding Mithai Merge or this Privacy Policy, please contact:</p>
+      <div class="callout">
+        <div class="callout-title">Developer &amp; Privacy Contact</div>
+        <p><strong>Publisher:</strong> Mithai Merge Studio<br>
+        <strong>Lead Developer:</strong> Karan Saini<br>
+        <strong>Support Email:</strong> <a href="mailto:officialworldwithtechnology@gmail.com" style="color: #60a5fa;">officialworldwithtechnology@gmail.com</a><br>
+        <strong>Jurisdiction:</strong> India</p>
+      </div>
+    </div>
+
+    <!-- Section 2: Google Play Console Data Safety Checklist -->
+    <div class="card">
+      <h2>Google Play Console: Data Safety Submission Guide</h2>
+      <p>When completing the <strong>Data Safety</strong> questionnaire under <em>Google Play Console &gt; Policy and programs &gt; App content &gt; Data safety</em>, enter these exact responses:</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Question / Section</th>
+              <th>Play Console Answer</th>
+              <th>Rationale &amp; Explanation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Does your app collect or share user data?</strong></td>
+              <td><span class="pill pill-yes">YES</span></td>
+              <td>AdMob SDK processes Advertising IDs &amp; diagnostic telemetry.</td>
+            </tr>
+            <tr>
+              <td><strong>Is all data encrypted in transit?</strong></td>
+              <td><span class="pill pill-yes">YES</span></td>
+              <td>AdMob network traffic strictly uses TLS / HTTPS encryption.</td>
+            </tr>
+            <tr>
+              <td><strong>Can users request data deletion?</strong></td>
+              <td><span class="pill pill-yes">YES</span></td>
+              <td>Users can reset/delete Advertising ID in Android OS settings and clear local storage.</td>
+            </tr>
+            <tr>
+              <td><strong>Location Data</strong></td>
+              <td><span class="pill pill-no">Unchecked (NO)</span></td>
+              <td>App has no location permissions (no ACCESS_FINE or ACCESS_COARSE).</td>
+            </tr>
+            <tr>
+              <td><strong>Personal Info (Name, Email, Phone)</strong></td>
+              <td><span class="pill pill-no">Unchecked (NO)</span></td>
+              <td>Zero user accounts or personal data collection.</td>
+            </tr>
+            <tr>
+              <td><strong>Financial / Payment Info</strong></td>
+              <td><span class="pill pill-no">Unchecked (NO)</span></td>
+              <td>No in-app purchases (IAP) or banking integrations.</td>
+            </tr>
+            <tr>
+              <td><strong>Photos, Videos, Audio, Files</strong></td>
+              <td><span class="pill pill-no">Unchecked (NO)</span></td>
+              <td>No camera, audio, or storage permissions requested.</td>
+            </tr>
+            <tr>
+              <td><strong>Device or other IDs</strong></td>
+              <td><span class="pill pill-yes">Checked (YES)</span></td>
+              <td><strong>Collected &amp; Shared</strong> by Google AdMob.<br>• <em>Purpose:</em> Advertising / Marketing, Analytics.<br>• <em>Ephemeral:</em> NO.<br>• <em>Optional:</em> YES (users can modify consent via UMP or reset AD_ID).</td>
+            </tr>
+            <tr>
+              <td><strong>App info and performance (Diagnostics)</strong></td>
+              <td><span class="pill pill-yes">Checked (YES)</span></td>
+              <td><strong>Collected &amp; Shared</strong> by Google AdMob.<br>• <em>Purpose:</em> Analytics, App Functionality.<br>• <em>Ephemeral:</em> YES.<br>• <em>Required:</em> YES.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout">
+        <div class="callout-title">Target Audience &amp; Advertising ID Declarations</div>
+        <p>• <strong>Target Age:</strong> Select &quot;13-15&quot;, &quot;16-17&quot;, &quot;18 and over&quot;.<br>
+        • <strong>Could your listing appeal to children?</strong> Select <strong>NO</strong> to avoid restrictive Google Play Families Policy requirements.<br>
+        • <strong>Advertising ID Declaration:</strong> Select <strong>YES</strong>, checked for Advertising/Marketing &amp; Analytics.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 Mithai Merge Studio. All rights reserved. • Hosted on the <a href="/">Privacy Portal</a></p>
+    </div>
+  </div>
+</body>
+</html>

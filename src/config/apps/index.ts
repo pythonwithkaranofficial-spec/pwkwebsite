@@ -5,6 +5,7 @@ import { periodicTableExplorerConfig } from "./periodictableexplorer";
 import { ncertMathFormulasHubConfig } from "./ncertmathformulashub";
 import { purpleMonsterConfig } from "./purplemonster";
 import { fontzyleConfig } from "./fontzyle";
+import { mithaiMergeConfig } from "./mithaimerge";
 
 // Registry of all registered applications
 export const appsRegistry: Record<string, AppConfig> = {
@@ -14,6 +15,7 @@ export const appsRegistry: Record<string, AppConfig> = {
   ncertmathformulashub: ncertMathFormulasHubConfig,
   purplemonster: purpleMonsterConfig,
   fontzyle: fontzyleConfig,
+  mithaimerge: mithaiMergeConfig,
 };
 
 // Returns only currently published apps (used in public app directory, header, and footer)
