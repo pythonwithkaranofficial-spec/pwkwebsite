@@ -146,73 +146,108 @@ export const purpleMonsterConfig: AppConfig = {
   },
   terms: {
     introduction:
-      "Welcome to Purple Monster: Snack Rain. These Terms and Conditions ('Terms') govern your use of the Purple Monster: Snack Rain mobile application ('App') developed by Karan Saini (Python With Karan). By installing, accessing, or playing the game, you agree to be bound by these Terms and our Privacy Policy.",
+      "Welcome to Purple Monster: Snack Rain. These Terms of Service ('Terms') constitute a legally binding agreement between you ('Player', 'User', 'you', or 'your') and Karan Saini ('Developer', 'Trader', 'we', 'us', or 'our') governing your use of the Purple Monster: Snack Rain mobile application (Package Name: com.purplemonster.purple_monster_game). This application is provided as a free-to-play arcade game and complies with applicable consumer protection laws and Google Play Console Trader requirements under the EU Digital Services Act (DSA).",
     sections: [
       {
         id: "acceptance",
         title: "1. Acceptance of Terms",
-        content:
-          "By downloading, accessing, or playing Purple Monster: Snack Rain, you agree to these Terms and Conditions and our Privacy Policy. If you do not agree with any provision of these terms, please discontinue using and uninstall the game.",
-      },
-      {
-        id: "gameplay-and-model",
-        title: "2. Gameplay & Free-to-Play Structure",
-        content:
-          "Purple Monster: Snack Rain is a free arcade catching game where players catch falling snacks while dodging obstacles. The game features unlockable monster skins, cosmetic arena backgrounds, an achievement system, and optional gameplay boosters. All core catching gameplay is 100% free. Optional rewards (such as extra lives, skin unlock progression, coin doubling, and daily boosters) can be earned by voluntarily watching rewarded video ads. No real-money in-app purchases are required to enjoy the game.",
-      },
-      {
-        id: "account-free-architecture",
-        title: "3. Account-Free Architecture & Local Storage",
-        content:
-          "Purple Monster: Snack Rain operates entirely without user accounts or cloud authentication. All game progress—including your high score, selected skin, achievement milestones, coin balance, and boosters—is stored solely on your device's local storage (Android SharedPreferences). Uninstalling the application or clearing device app data will permanently reset your local gameplay progress.",
-      },
-      {
-        id: "third-party-advertising",
-        title: "4. In-Game Advertising (Google AdMob)",
-        content:
-          "To sustain free game development, the App displays advertisements provided by Google AdMob. The game implements four ad formats with player-friendly protections: Rewarded Video Ads (always voluntary, user-initiated), Interstitial Ads (spaced with pacing rules of at least 3 rounds and 300+ seconds of play, never during active gameplay), Banner Ads (menus and pause screens only), and Native Ads (Shop and Achievements menus). If an advertisement fails to load or if you decline a rewarded ad, gameplay continues normally without penalty.",
-      },
-      {
-        id: "system-permissions",
-        title: "5. Permissions & Connectivity",
         content: [
-          "android.permission.INTERNET — Used exclusively by Google AdMob to retrieve and display advertisements. The game engine itself performs no network requests.",
-          "android.permission.ACCESS_NETWORK_STATE — Used by Google AdMob to check network availability before requesting ads, avoiding unnecessary retries while offline.",
+          "Legally Binding Agreement: By downloading, installing, accessing, or playing Purple Monster: Snack Rain, you confirm that you have read, understood, and agreed to be legally bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, you must refrain from playing and uninstall the application immediately.",
+          "Eligibility & General Audience: Purple Monster: Snack Rain is rated ESRB Everyone / PEGI 3 for a general, family audience. Users under 18 years of age represent that they have reviewed these Terms with a parent or legal guardian.",
+          "Google Play Trader Status Declaration: In accordance with Article 30 of the European Union Digital Services Act (DSA) (Regulation EU 2022/2065), the developer is registered as a 'Trader' on Google Play, providing ad-supported digital entertainment software to users globally, including the European Economic Area (EEA) and the United Kingdom.",
+          "Right of Withdrawal (EU/EEA & UK Consumers): The application is 100% free-to-play with zero upfront monetary cost. Under statutory consumer protection law, performance begins immediately upon installation. You retain the right to terminate this agreement at any time by ceasing play and uninstalling the game from your device.",
+        ],
+      },
+      {
+        id: "description-of-app",
+        title: "2. Description of the App and Services",
+        content: [
+          "Free-to-Play Arcade Game: Purple Monster: Snack Rain is a casual arcade mobile game where players control a friendly purple monster to catch falling snacks while dodging bombs and obstacles.",
+          "Cosmetic Customization & Progression: Features unlockable monster skins, cosmetic arena background themes, a 60+ milestone achievement system, optional boosters, and an on-device coin economy.",
+          "100% Offline Core Gameplay: All core arcade catching mechanics, scores, unlockable skins, and settings operate entirely offline on your local device without requiring an active internet connection.",
+          "Account-Free & Local Storage Architecture: The game requires zero player accounts, sign-ups, or login credentials. All high scores ('best'), unlocked skins, achievements, coin progression, and booster inventories are stored strictly inside on-device SharedPreferences.",
+        ],
+      },
+      {
+        id: "user-responsibilities",
+        title: "3. User Responsibilities & Acceptable Use",
+        content: [
+          "Personal Entertainment Use: You agree to use the application strictly for personal, non-commercial entertainment in compliance with all applicable laws.",
+          "Prohibition on Cheating & Memory Manipulation: You agree not to use memory editors, game-cracking software, automated bots, macros, or modified APKs to illegitimately bypass gameplay progression, coin balances, or skin unlock requirements.",
+          "Prohibition on Advertising Manipulation: You strictly agree not to use automated tools, bots, click farms, or emulators to generate fraudulent AdMob impressions, clicks, or illegitimate rewarded video ad triggers.",
+          "Prohibition on Reverse Engineering: You agree not to decompile, reverse engineer, disassemble, extract, or redistribute the game binary, sprites, audio tracks, or assets for commercial sale.",
+          "Device Responsibility: You are responsible for maintaining your device operating system and storage.",
         ],
       },
       {
         id: "intellectual-property",
-        title: "6. Intellectual Property Rights",
-        content:
-          "All custom monster designs, animations, artwork, sound effects, music tracks, user interface elements, gameplay mechanics, and code in Purple Monster: Snack Rain are the intellectual property of Karan Saini (Python With Karan). You are granted a limited, personal, revocable, non-exclusive, non-transferable license to play the game for personal, non-commercial entertainment.",
+        title: "4. Intellectual Property Rights",
+        content: [
+          "Developer Ownership: All custom monster character designs, sprite animations, arena artwork, original sound effects, background music compositions, gameplay mechanics, and software code in Purple Monster: Snack Rain are the exclusive intellectual property of Karan Saini (Python With Karan).",
+          "Limited License: Subject to these Terms, you are granted a limited, personal, revocable, non-exclusive, non-transferable, and non-sublicensable license to play the game solely for non-commercial personal entertainment.",
+          "Protection of Proprietary Assets: No character art, animations, or audio tracks may be copied, repurposed, or publicly displayed for commercial purposes without prior written authorization.",
+        ],
       },
       {
-        id: "prohibited-activities",
-        title: "7. Prohibited Uses",
+        id: "advertisements",
+        title: "5. Advertisements (AdMob and Third-Party Ads)",
         content: [
-          "Decompiling, reverse engineering, disassembling, or extracting the application binary or game assets.",
-          "Employing automated tools, bots, scripts, or emulators to generate fraudulent ad impressions, clicks, or illegitimate gameplay scores.",
-          "Redistributing, selling, licensing, or commercially exploiting any assets, artwork, audio, or code from the game.",
-          "Tampering with local application storage to bypass game progression or ad systems.",
+          "Ad-Supported Monetization: To keep Purple Monster: Snack Rain 100% free with zero real-money in-app purchases (IAP), the game is supported by advertisements served via Google AdMob (google_mobile_ads SDK v9.1.0).",
+          "Four Ad Formats with Strict Player Pacing: (1) Rewarded Video Ads — 100% voluntary and user-initiated to earn a second chance after Game Over, unlock monster skins, double coin earnings, or receive daily boosters; (2) Interstitial Ads — shown strictly between sessions only after at least 3 completed rounds AND 300+ seconds of real gameplay, never interrupting active play; (3) Banner Ads — anchored adaptive banners in menus and pause screens only; (4) Native Ads — styled into the Shop and Achievements menus.",
+          "Player-First Safety: Zero advertisements ever interrupt active gameplay inside the snack-catching arena.",
+          "Consent Management (Google UMP): In compliance with the GDPR and ePrivacy regulations, Google User Messaging Platform (UMP) handles explicit advertising consent for EEA, UK, and Swiss players.",
+          "Opt-Out Options: You may opt out of personalized ads at any time via Android Settings (Settings > Google > Ads) or via https://adssettings.google.com.",
+        ],
+      },
+      {
+        id: "third-party-services",
+        title: "6. Third-Party Services",
+        content: [
+          "Third-Party SDKs: Integrates Google Mobile Ads (AdMob) for ad delivery and Google Play Services.",
+          "Zero Behavioral Telemetry: The game does not integrate Facebook SDK, Firebase Analytics, or behavioral telemetry trackers.",
+          "Third-Party Disclaimers: Third-party services operate under their own independent terms and policies (https://policies.google.com/privacy). We do not control and are not responsible for third-party network availability.",
+        ],
+      },
+      {
+        id: "disclaimer-of-warranties",
+        title: "7. Disclaimer of Warranties",
+        content: [
+          "Provided 'AS IS' & 'AS AVAILABLE': Purple Monster: Snack Rain is provided on an 'AS IS' and 'AS AVAILABLE' basis without warranty of any kind, whether express, statutory, or implied.",
+          "Entertainment Purpose Only: The software is designed purely for casual recreation. We make no warranty that gameplay will be uninterrupted, error-free, or compatible with every past or future device hardware.",
+          "Preservation of Consumer Guarantees: Nothing in these Terms limits or excludes any non-waivable statutory consumer guarantees of conformity under applicable consumer legislation, including EU Directive (EU) 2019/770.",
         ],
       },
       {
         id: "limitation-of-liability",
         title: "8. Limitation of Liability",
-        content:
-          "To the fullest extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, or consequential damages resulting from your use of or inability to use the application, including loss of local game progress due to device resetting, updates, or hardware failure.",
+        content: [
+          "Exclusion of Consequential Damages: To the maximum extent permitted by applicable law, Karan Saini shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of or inability to play the game.",
+          "Local Data Reset Disclaimer: Because all high scores, unlocked monster skins, coins, and achievement progress reside strictly in local on-device SharedPreferences, the Developer is not liable for progress loss resulting from device resets, storage clearing, uninstallation, or hardware malfunction.",
+          "Aggregate Liability Cap: Our total aggregate liability for all claims related to the game shall not exceed the amount paid by you ($0.00 / INR 0) or USD $10.00, whichever is greater.",
+        ],
       },
       {
-        id: "governing-law",
-        title: "9. Governing Law & Dispute Resolution",
-        content:
-          "These Terms are governed by and construed in accordance with the laws of India, without regard to its conflict of law principles.",
+        id: "changes-to-terms",
+        title: "9. Changes to Terms",
+        content: [
+          "Modifications: We reserve the right to revise or update these Terms at any time to reflect game updates, new features, or changing legal/Google Play requirements.",
+          "Notice of Updates: Changes become effective upon publication on this portal, marked by the revised 'Last Updated' date.",
+          "Continued Play: Continued installation or play of Purple Monster: Snack Rain constitutes acceptance of the revised Terms.",
+        ],
       },
       {
         id: "contact-information",
-        title: "10. Contact & Feedback",
-        content:
-          "For any questions, bug reports, or support regarding Purple Monster: Snack Rain or these Terms, please contact officialworldwithtechnology@gmail.com.",
+        title: "10. Contact Information & Google Play Trader Disclosures",
+        content: [
+          "Trader Identification (EU Digital Services Act): In compliance with Article 30 of the EU Digital Services Act (DSA) and Google Play Trader disclosure requirements, the legal provider of this application is:",
+          "Developer / Trader Name: Karan Saini",
+          "Trading / App Name: Python With Karan (Purple Monster: Snack Rain)",
+          "Official Contact Email: officialworldwithtechnology@gmail.com",
+          "Support & Legal Inquiries: officialworldwithtechnology@gmail.com",
+          "Country & Jurisdiction of Establishment: India",
+          "Self-Certification Commitment: The Trader hereby self-certifies that it only offers products and services that comply with applicable rules of European Union law, Indian law, and Google Play Developer Program Policies.",
+          "Consumer Dispute Inquiries: For questions, bug reports, or legal inquiries, please contact officialworldwithtechnology@gmail.com. We respond to inquiries within 48 to 72 business hours.",
+        ],
       },
     ],
   },

@@ -152,89 +152,109 @@ export const fontzyleConfig: AppConfig = {
   },
   terms: {
     introduction:
-      "Welcome to FontZyle. These Terms and Conditions ('Terms') govern your access to and use of the FontZyle: Fancy Text & Fonts mobile application ('App') developed and operated by FontZyle Studio. By downloading, installing, accessing, or using FontZyle, you agree to be bound by these Terms and our Privacy Policy.",
+      "Welcome to FontZyle. These Terms of Service ('Terms') constitute a legally binding agreement between you ('User', 'you', or 'your') and FontZyle Studio / Karan Saini ('Developer', 'Trader', 'we', 'us', or 'our') governing your use of the FontZyle: Fancy Text & Fonts mobile application (Package Name: com.fontzyle.app). This application is provided as a free creative typography utility and complies with applicable consumer protection laws and Google Play Console Trader requirements under the EU Digital Services Act (DSA).",
     sections: [
       {
         id: "acceptance",
         title: "1. Acceptance of Terms",
-        content:
-          "By downloading, accessing, or using FontZyle, you confirm that you have read, understood, and agreed to be legally bound by these Terms and Conditions and our Privacy Policy. If you do not agree with any part of these Terms, you must discontinue using and uninstall the application immediately.",
-      },
-      {
-        id: "creative-utility-description",
-        title: "2. Creative Utility & In-Memory Text Transformation",
-        content:
-          "FontZyle is an offline-first mobile utility designed to assist users with Unicode-based fancy text formatting, decorative symbols, gaming nickname ideas, social media bio templates, and graphic card generation. All text conversions and decorative transformations occur exclusively in your physical device's volatile Random Access Memory (RAM). The App does not monitor, record, store, or transmit any text, names, bios, or creative compositions you enter.",
-      },
-      {
-        id: "free-model-no-purchases",
-        title: "3. Free-to-Use Model & Zero In-App Purchases",
-        content:
-          "FontZyle is a 100% free creative application. There are no paid subscriptions, premium paywalls, or in-app purchases. All font styles, decorative symbols, bio templates, and image export tools are available without financial obligation.",
-      },
-      {
-        id: "account-free-architecture",
-        title: "4. Account-Free Architecture & Local Data Storage",
-        content:
-          "FontZyle operates entirely without user registration, login credentials, or cloud accounts. Any user preferences (theme settings, haptic feedback toggle, auto-copy preference) and bookmarked favorites are stored strictly in private, on-device application storage (Android SharedPreferences). Clearing application data in Android Settings or uninstalling the App will permanently delete all locally saved preferences and favorites.",
-      },
-      {
-        id: "in-app-advertising-ump",
-        title: "5. In-App Advertising & Consent Management (Google AdMob & UMP)",
-        content:
-          "To keep FontZyle completely free, the App displays third-party banner and interstitial advertisements served via Google AdMob. The App integrates Google's User Messaging Platform (UMP) to obtain and manage consent from users in the EEA, UK, Switzerland, and relevant US states. Users may change or revoke advertising consent at any time via the 'Advertising Privacy Options' button in FontZyle Settings.",
-      },
-      {
-        id: "permissions-and-media",
-        title: "6. Device Permissions & Scoped Storage Compliance",
         content: [
-          "android.permission.INTERNET — Used exclusively to load AdMob advertisements and download initial Google Font assets.",
-          "android.permission.ACCESS_NETWORK_STATE — Used to determine network connectivity before attempting ad or font downloads.",
-          "android.permission.POST_NOTIFICATIONS — Optional notification permission (Android 13+) for styling inspiration alerts. Can be granted or revoked at any time in device settings.",
-          "android.permission.RECEIVE_BOOT_COMPLETED — Used strictly to restore scheduled local notification alarms following a device restart.",
-          "android.permission.VIBRATE — Used to provide tactile haptic feedback during copy and bookmark interactions (can be disabled in Settings).",
-          "Scoped Storage & MediaStore: FontZyle does not request broad external storage permissions. Images created in the Text-to-Image Creator are exported through Android's modern Scoped Storage and MediaStore APIs only upon explicit user command.",
+          "Legally Binding Contract: By downloading, installing, accessing, or using FontZyle, you confirm that you have read, understood, and agreed to be legally bound by these Terms of Service and our Privacy Policy. If you do not agree, you must immediately discontinue use and uninstall the application.",
+          "Eligibility & General Audience: FontZyle is intended for creators, gamers, social media enthusiasts, and general users aged 13 and older. Users under 18 years of age confirm that they have reviewed these Terms with a parent or legal guardian.",
+          "Google Play Trader Status Declaration: In compliance with Article 30 of the EU Digital Services Act (DSA) (Regulation EU 2022/2065), the developer is registered as a 'Trader' on Google Play, providing ad-supported digital utility software to consumers globally, including the European Economic Area (EEA) and the United Kingdom.",
+          "Right of Withdrawal (EU/EEA & UK Consumers): FontZyle is provided 100% free of charge with zero in-app purchases or subscription fees. Under applicable consumer law, performance begins immediately upon installation. You may terminate this contract at any time simply by uninstalling the application.",
+        ],
+      },
+      {
+        id: "description-of-app",
+        title: "2. Description of the App and Services",
+        content: [
+          "Client-Side Creative Utility: FontZyle provides Unicode-based fancy fonts, decorative text symbols, gaming nickname ideas, social media bio templates, and a Text-to-Image graphic card generator.",
+          "Volatile RAM In-Memory Processing: All text styling conversions and transformations occur strictly in volatile Random Access Memory (RAM) on your physical Android device. FontZyle does NOT log, monitor, record, store, or transmit any text, names, bios, or creative compositions you enter.",
+          "Zero User Accounts: The App operates with zero user registration, passwords, or cloud accounts. You have instant access to all styling tools upon launch.",
+          "Local-Only Settings & Scoped Storage: Theme preferences (Dark Mode, Light Mode), haptic feedback toggles, and bookmarked favorites reside strictly in on-device private storage (SharedPreferences). Exported image cards are processed through modern Android Scoped Storage / MediaStore APIs only upon your explicit command.",
+        ],
+      },
+      {
+        id: "user-responsibilities",
+        title: "3. User Responsibilities & Acceptable Use",
+        content: [
+          "Lawful Creative Expression: You agree to use FontZyle exclusively for lawful creative, personal, and social media styling purposes.",
+          "Prohibited Content: You agree not to use FontZyle to compose, generate, or export text or image content that is defamatory, harassing, threatening, discriminatory, hateful, pornographic, or in violation of any third-party rights or applicable laws.",
+          "Prohibition on Reverse Engineering: You agree not to decompile, reverse engineer, disassemble, or extract proprietary code or typography asset bundles from the application binary.",
+          "Prohibition on Advertising Fraud: You strictly agree not to use bots, automated scripts, emulators, or click farms to generate fraudulent AdMob ad impressions or clicks.",
+          "Device Security: You are responsible for ensuring that your Android device hardware and operating system remain secure and compatible.",
         ],
       },
       {
         id: "intellectual-property",
-        title: "7. Intellectual Property Rights & Ownership",
-        content:
-          "All software code, application layout, graphic designs, icons, UI elements, and styling algorithms in FontZyle are the intellectual property of FontZyle Studio. You are granted a limited, personal, non-exclusive, non-transferable, revocable license to use the App for personal, creative, and non-commercial purposes. All content, text, and graphics generated or exported by you using the App remain your personal property.",
-      },
-      {
-        id: "third-party-trademarks-disclaimer",
-        title: "8. Third-Party Trademarks & Gaming Disclaimer",
-        content:
-          "Any references to third-party video games (such as BGMI, Free Fire, PUBG Mobile, Call of Duty, Roblox, Valorant) or social media platforms (such as Instagram, WhatsApp, TikTok, Discord, X/Twitter) within FontZyle are used purely for nominative, descriptive, and stylistic compatibility purposes. FontZyle is an independent creative toolkit and is NOT affiliated with, sponsored by, authorized by, or endorsed by Krafton, Garena, Activision, Roblox Corp, Meta Platforms, Discord Inc., X Corp, or any of their affiliates.",
-      },
-      {
-        id: "prohibited-conduct",
-        title: "9. Prohibited Conduct",
+        title: "4. Intellectual Property Rights",
         content: [
-          "Decompiling, reverse engineering, disassembling, or attempting to derive the source code of the application.",
-          "Using automated bots, scripts, emulators, or click farms to generate artificial ad impressions or clicks.",
-          "Redistributing, sublicensing, selling, or commercially exploiting the application binary or its proprietary assets.",
-          "Using the App to generate abusive, defamatory, harassing, or unlawful text content.",
+          "Developer Ownership: All application software code, UI design elements, algorithms, proprietary symbols, templates, icons, and branding in FontZyle are the intellectual property of FontZyle Studio / Karan Saini.",
+          "User Content Ownership: You retain 100% full ownership and intellectual property rights over any original text, nicknames, quotes, or graphic compositions that you create and export using FontZyle.",
+          "Limited License Grant: You are granted a limited, personal, revocable, non-exclusive, non-transferable, and non-sublicensable license to use the App for personal and creative purposes.",
+          "Third-Party Nominative Disclaimer: Any references to third-party games (such as BGMI, Free Fire, PUBG Mobile, Call of Duty, Roblox, Valorant) or social platforms (Instagram, WhatsApp, TikTok, Discord, X/Twitter) are used purely for nominative compatibility and stylistic identification. FontZyle is independent and not affiliated with, sponsored by, or endorsed by Krafton, Garena, Activision, Roblox Corp, Meta Platforms, Discord Inc., X Corp, or their affiliates.",
+        ],
+      },
+      {
+        id: "advertisements",
+        title: "5. Advertisements (AdMob and Third-Party Ads)",
+        content: [
+          "Ad-Supported Free Model: To keep all font styles, symbol libraries, bio templates, and graphic card creators 100% free with zero in-app purchases, FontZyle displays advertisements via Google AdMob (google_mobile_ads SDK v9.1.0).",
+          "Ad Formats Deployed: Includes adaptive banner ads (anchored at the bottom of screens) and occasional interstitial ads between menu transitions.",
+          "Consent Management (Google UMP): The App implements Google's User Messaging Platform (UMP) SDK to capture and manage explicit advertising consent for EEA, UK, and Swiss users under GDPR and ePrivacy laws. Users can review or revoke consent at any time via Settings -> Advertising Privacy Options.",
+          "Opt-Out Choices: You may opt out of interest-based personalized ads via Android Settings (Settings > Google > Ads) or via Google Ads Settings at https://adssettings.google.com.",
+        ],
+      },
+      {
+        id: "third-party-services",
+        title: "6. Third-Party Services",
+        content: [
+          "Integrated Service Providers: Integrates Google Mobile Ads (AdMob) for ad serving, Google User Messaging Platform (UMP) for consent compliance, and Google Fonts API (google_fonts v8.2.1) for downloading open-source font files.",
+          "Zero Behavioral Tracking: The App does not integrate Facebook SDK or behavioral analytics trackers.",
+          "Third-Party Terms & Disclaimers: Third-party services operate under their own independent terms and privacy policies (https://policies.google.com/privacy). We do not control and are not liable for third-party network availability.",
+        ],
+      },
+      {
+        id: "disclaimer-of-warranties",
+        title: "7. Disclaimer of Warranties",
+        content: [
+          "Provided 'AS IS' & 'AS AVAILABLE': FontZyle is provided on an 'AS IS' and 'AS AVAILABLE' basis without warranties of any kind, whether express, statutory, or implied.",
+          "Unicode Platform Compatibility Disclaimer: While FontZyle utilizes standard universal Unicode characters, actual rendering appearance (such as glyph shapes or blank boxes) is determined by the destination application, operating system, or device used by the recipient. We make no warranty that all fancy text styles will render identically across every third-party game or platform.",
+          "No Guarantee of Flawless Operation: We do not warrant that the application will operate completely uninterrupted, bug-free, or compatible with all past or future device hardware.",
+          "Statutory Consumer Rights: Nothing in these Terms shall limit or exclude any statutory legal warranties of conformity for digital content under applicable consumer protection legislation, including Directive (EU) 2019/770.",
         ],
       },
       {
         id: "limitation-of-liability",
-        title: "10. Limitation of Liability & Warranty Disclaimer",
-        content:
-          "FontZyle is provided on an 'AS IS' and 'AS AVAILABLE' basis without warranties of any kind, whether express or implied. To the maximum extent permitted by applicable law, FontZyle Studio shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from your use of or inability to use the application.",
+        title: "8. Limitation of Liability",
+        content: [
+          "Exclusion of Consequential Damages: To the maximum extent permitted by applicable law, FontZyle Studio and Karan Saini shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of or inability to use the application.",
+          "Local Data Reset Disclaimer: Because user favorites and theme preferences reside strictly in on-device storage, the Developer bears no liability for data loss resulting from device resets, storage clearing, or uninstallation.",
+          "Liability Cap: In no event shall our total aggregate liability for all claims arising out of or related to FontZyle exceed the amount paid by you ($0.00 / INR 0) or USD $10.00, whichever is greater.",
+        ],
       },
       {
-        id: "governing-law",
-        title: "11. Governing Law & Jurisdiction",
-        content:
-          "These Terms shall be governed by and construed in accordance with the laws of India, without regard to conflict of law principles.",
+        id: "changes-to-terms",
+        title: "9. Changes to Terms",
+        content: [
+          "Modifications & Revisions: We reserve the right to amend, update, or revise these Terms of Service at any time to comply with changes in legal requirements or Google Play Developer Policies.",
+          "Publication of Updates: Changes become effective immediately upon publication on this legal portal, indicated by an updated 'Last Updated' date.",
+          "Continued Acceptance: Your continued installation or use of FontZyle following any updates signifies your binding acceptance of the revised Terms.",
+        ],
       },
       {
         id: "contact-information",
-        title: "12. Contact Information",
-        content:
-          "For any questions, feedback, or support regarding FontZyle or these Terms, please contact support@fontzyle.com.",
+        title: "10. Contact Information & Google Play Trader Disclosures",
+        content: [
+          "Trader Identification (EU Digital Services Act): In compliance with Article 30 of the EU Digital Services Act (DSA) and Google Play Trader disclosure requirements, the legal provider of this application is:",
+          "Developer / Trader Name: Karan Saini",
+          "Trading / App Name: FontZyle Studio (FontZyle: Fancy Text & Fonts)",
+          "Official Contact Email: support@fontzyle.com",
+          "Official Website: https://fontzyle.com",
+          "Country & Jurisdiction of Establishment: India",
+          "Self-Certification Commitment: The Trader hereby self-certifies that it only offers products and services that comply with applicable rules of European Union law, Indian law, and Google Play Developer Program Policies.",
+          "Consumer Dispute Inquiries: For questions, feedback, or legal inquiries, please contact support@fontzyle.com. We respond to inquiries within 48 to 72 business hours.",
+        ],
       },
     ],
   },

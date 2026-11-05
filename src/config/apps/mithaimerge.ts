@@ -148,88 +148,108 @@ export const mithaiMergeConfig: AppConfig = {
   },
   terms: {
     introduction:
-      "Welcome to Mithai Merge: 2048 Puzzle. These Terms and Conditions ('Terms') govern your access to and use of the Mithai Merge: 2048 Puzzle mobile application ('App') developed and operated by Mithai Merge Studio. By downloading, installing, accessing, or playing Mithai Merge, you agree to be bound by these Terms and our Privacy Policy.",
+      "Welcome to Mithai Merge: 2048 Puzzle. These Terms of Service ('Terms') constitute a legally binding agreement between you ('Player', 'User', 'you', or 'your') and Mithai Merge Studio / Karan Saini ('Developer', 'Trader', 'we', 'us', or 'our') governing your use of the Mithai Merge: 2048 Puzzle mobile application (Package Name: com.mithaimerge.mithai_merge). This application is provided as a free-to-play casual puzzle game and complies with applicable consumer protection laws and Google Play Console Trader requirements under the EU Digital Services Act (DSA).",
     sections: [
       {
         id: "acceptance",
         title: "1. Acceptance of Terms",
-        content:
-          "By downloading, installing, or playing Mithai Merge: 2048 Puzzle, you confirm that you have read, understood, and agreed to be legally bound by these Terms and Conditions and our Privacy Policy. If you do not agree with any part of these Terms, you must discontinue using and uninstall the application immediately.",
-      },
-      {
-        id: "gameplay-description",
-        title: "2. Casual Puzzle Gameplay & Offline-First Design",
-        content:
-          "Mithai Merge is an Indian sweet-themed sliding block puzzle game offering classic 2048 merging, campaign level progression (Mithai Yatra), streaks, cosmetics, and offline play. All puzzle computations, board simulations, and score calculations execute locally on your physical Android device. The App does not monitor, record, store, or transmit your individual board moves to remote servers.",
-      },
-      {
-        id: "free-model-no-purchases",
-        title: "3. 100% Free-to-Play & Zero In-App Purchases",
-        content:
-          "Mithai Merge is a 100% free-to-play mobile game. There are no paid subscriptions, premium paywalls, or in-app real-money transactions (IAP). All game modes, boards, Mithai Yatra levels, cosmetics, and undos/shuffles are unlockable through normal gameplay or optional rewarded advertisements.",
-      },
-      {
-        id: "account-free-architecture",
-        title: "4. Account-Free Architecture & Local Data Persistence",
-        content:
-          "Mithai Merge operates entirely without user registration, login credentials, or cloud accounts. All saved game boards, campaign level stars, streak records, coins, high scores, and user preferences (music, SFX, haptic feedback, colorblind contrast, language, D-Pad toggle) are stored strictly inside the private on-device application sandbox (getApplicationDocumentsDirectory and SharedPreferences). Clearing application data in Android Settings or uninstalling the App will permanently delete all locally saved game progress.",
-      },
-      {
-        id: "in-app-advertising-ump",
-        title: "5. In-App Advertising & Consent Management (Google AdMob & UMP)",
-        content:
-          "To keep Mithai Merge completely free, the App displays third-party banner, occasional interstitial, and optional rewarded video ads served via Google AdMob. The App integrates Google's User Messaging Platform (UMP) to obtain and manage consent from users in the EEA, UK, Switzerland, and relevant US states. Users may change or revoke advertising consent at any time via the 'Ad Privacy & Consent' button in Mithai Merge Settings (Settings > Privacy & Data > Ad Privacy & Consent).",
-      },
-      {
-        id: "permissions-declaration",
-        title: "6. Device Permissions Declared",
         content: [
-          "android.permission.INTERNET — Required by Google Mobile Ads SDK (AdMob) to load advertisement inventory, render banner/interstitial/rewarded ads, and communicate with Google User Messaging Platform (UMP).",
-          "android.permission.ACCESS_NETWORK_STATE — Allows the App to verify whether an active internet connection is available before attempting ad requests, preventing unnecessary battery and data drain.",
-          "android.permission.VIBRATE — Powers tactile haptic feedback when tiles are merged, buttons are pressed, or power-ups are triggered (can be toggled off in Settings).",
-          "com.google.android.gms.permission.AD_ID — Declared on Android 13+ (API 33+) to enable Google Play Services to provide the Google Advertising ID for ad frequency capping and consent-based delivery.",
-          "Zero Sensitive Permissions: The App requests NO location access (GPS), NO camera access, NO microphone access, NO contacts access, NO phone state access, and NO storage/media access.",
+          "Legally Binding Agreement: By downloading, installing, accessing, or playing Mithai Merge: 2048 Puzzle, you confirm that you have read, understood, and agreed to be legally bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, you must refrain from playing and uninstall the application immediately.",
+          "Eligibility & General Audience: Mithai Merge is intended for casual puzzle players aged 13 and older and families. Users under 18 years of age confirm that they have reviewed these Terms with a parent or legal guardian.",
+          "Google Play Trader Status Declaration: In accordance with Article 30 of the EU Digital Services Act (DSA) (Regulation EU 2022/2065), the developer is registered as a 'Trader' on Google Play, providing ad-supported digital entertainment software to users globally, including the European Economic Area (EEA) and the United Kingdom.",
+          "Right of Withdrawal (EU/EEA & UK Consumers): Mithai Merge is 100% free-to-play with zero real-money in-app purchases (IAP). Under statutory consumer law, performance begins immediately upon installation. You may terminate this contract at any time simply by uninstalling the application from your device.",
         ],
       },
       {
-        id: "in-app-reviews",
-        title: "7. Google Play In-App Review API",
-        content:
-          "Mithai Merge incorporates the official Google Play In-App Review API to request player feedback solely after positive milestones (≥5 games completed, personal best/high score achieved, capped at once every 60 days). The review flow is securely presented and processed by the Google Play Store operating system service; no user review text or rating data is collected by our App.",
+        id: "description-of-app",
+        title: "2. Description of the App and Services",
+        content: [
+          "Casual Indian Sweet Puzzle Game: Mithai Merge is a sliding block puzzle game featuring classic 2048 tile merging, Mithai Yatra campaign levels, endless board mode, sweet cosmetic themes, daily streaks, coin rewards, and tactile haptic feedback.",
+          "100% Free-to-Play Structure: All game modes, campaign levels, cosmetic boards, and power-up tools (undos, shuffles) are unlockable through standard gameplay or optional rewarded advertisements. There are zero paid subscriptions or real-money transactions.",
+          "100% Offline Core Availability: All puzzle move simulations, board evaluations, and streak computations execute locally on your physical Android device without requiring internet access.",
+          "Account-Free Sandbox Persistence: The game requires zero user accounts or logins. All game boards, campaign level stars, streak records, coin balances, and audio/haptic preferences are saved strictly inside your device's isolated application sandbox (save_*.json and profile.json).",
+        ],
+      },
+      {
+        id: "user-responsibilities",
+        title: "3. User Responsibilities & Acceptable Use",
+        content: [
+          "Lawful Entertainment Use: You agree to use Mithai Merge strictly for personal, non-commercial entertainment in compliance with all applicable laws.",
+          "Prohibition on Cheating & Save File Tampering: You agree not to modify local save JSON files, inject artificial score values, or use automated puzzle solvers, bots, or emulators to manipulate high scores or leaderboards.",
+          "Prohibition on Advertising Fraud: You strictly agree not to use bots, automated scripts, macros, or click farms to generate fraudulent AdMob ad impressions, clicks, or illegitimate rewarded ad completions.",
+          "Prohibition on Reverse Engineering: You agree not to decompile, reverse engineer, disassemble, extract, or redistribute the game binary, sweet tile artwork, audio sound effects, or code assets for commercial sale.",
+          "Device Maintenance: You are responsible for ensuring that your Android device hardware and operating system remain secure and up to date.",
+        ],
       },
       {
         id: "intellectual-property",
-        title: "8. Intellectual Property Rights & Ownership",
-        content:
-          "All game artwork, Indian sweet tile graphics, animations, user interface designs, audio sound effects, background music compositions, software code, and promotional branding in Mithai Merge are the intellectual property of Mithai Merge Studio. You are granted a limited, personal, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial entertainment purposes.",
+        title: "4. Intellectual Property Rights",
+        content: [
+          "Developer Ownership: All Indian sweet tile illustrations, animations, UI layouts, sound effects, background music compositions, software code, and promotional branding in Mithai Merge are the exclusive intellectual property of Mithai Merge Studio / Karan Saini.",
+          "Limited License Grant: Subject to these Terms, you are granted a limited, personal, revocable, non-exclusive, non-transferable, and non-sublicensable license to play the game solely for non-commercial entertainment.",
+          "Protection of Proprietary Assets: No sweet illustrations, audio tracks, or branding elements may be copied, redistributed, or commercially exploited without express prior written permission.",
+        ],
       },
       {
-        id: "prohibited-conduct",
-        title: "9. Prohibited Conduct",
+        id: "advertisements",
+        title: "5. Advertisements (AdMob and Third-Party Ads)",
         content: [
-          "Decompiling, reverse engineering, disassembling, or attempting to derive the source code of the application.",
-          "Using automated bots, macros, scripts, emulators, or click farms to generate artificial ad impressions or rewarded video completions.",
-          "Redistributing, sublicensing, leasing, selling, or commercially exploiting the application binary or its proprietary assets.",
-          "Modifying local game save files to distribute unauthorized cracked or altered versions of the game.",
+          "Ad-Supported Monetization: To keep Mithai Merge 100% free with zero in-app purchases, the game is supported by advertisements delivered via Google AdMob (google_mobile_ads SDK ^9.1.0).",
+          "Ad Formats Deployed: Includes adaptive banner ads, occasional interstitial ads displayed after game rounds, and optional rewarded video ads (providing bonus in-game items such as undos, shuffles, or coins).",
+          "Voluntary Rewarded Ads: Rewarded video ads are strictly voluntary and player-initiated. Declining rewarded ads has no negative effect on your ability to play standard 2048 puzzles or advance through campaign levels.",
+          "Consent Management (Google UMP): The game implements the Google User Messaging Platform (UMP) SDK to capture and manage explicit advertising consent for EEA, UK, and Swiss players under GDPR and ePrivacy regulations. Players can review or revoke consent anytime via Settings -> Privacy & Data -> Ad Privacy & Consent.",
+          "Opt-Out Options: You may manage or opt out of personalized advertising via Android Settings (Settings > Google > Ads) or via Google Ads Settings at https://adssettings.google.com.",
+        ],
+      },
+      {
+        id: "third-party-services",
+        title: "6. Third-Party Services",
+        content: [
+          "Integrated Service Providers: Integrates Google Mobile Ads (AdMob) for ad serving, Google User Messaging Platform (UMP) for regulatory consent, and the Google Play In-App Review API (in_app_review ^2.0.12) to prompt for optional store reviews.",
+          "Google Play In-App Review API: Store review prompts occur solely after positive milestones (≥5 games, win/high-score, capped once every 60 days). The review flow is securely presented and handled by the Android OS; no user review text or rating data is collected by our App.",
+          "Third-Party Policies: Third-party services operate under their own independent terms and privacy policies (https://policies.google.com/privacy). We do not control and are not liable for third-party network availability.",
+        ],
+      },
+      {
+        id: "disclaimer-of-warranties",
+        title: "7. Disclaimer of Warranties",
+        content: [
+          "Provided 'AS IS' & 'AS AVAILABLE': Mithai Merge: 2048 Puzzle is provided on an 'AS IS' and 'AS AVAILABLE' basis without warranty of any kind, whether express, statutory, or implied.",
+          "Casual Gaming Purpose: The game is designed purely for casual recreation. We make no warranty that gameplay will be uninterrupted, error-free, or compatible with every device hardware specification.",
+          "Preservation of Consumer Guarantees: Nothing in these Terms shall limit or exclude any statutory legal warranties of conformity for digital content under applicable consumer protection legislation, including Directive (EU) 2019/770.",
         ],
       },
       {
         id: "limitation-of-liability",
-        title: "10. Limitation of Liability & Warranty Disclaimer",
-        content:
-          "Mithai Merge is provided on an 'AS IS' and 'AS AVAILABLE' basis without warranties of any kind, whether express or implied. To the maximum extent permitted by applicable law, Mithai Merge Studio shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from your use of or inability to use the application.",
+        title: "8. Limitation of Liability",
+        content: [
+          "Exclusion of Consequential Damages: To the maximum extent permitted by applicable law, Mithai Merge Studio and Karan Saini shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of or inability to play the game.",
+          "Local Data Reset Disclaimer: Because all saved boards, Mithai Yatra stars, coins, and high scores reside strictly inside your device's local application sandbox, the Developer is not liable for progress loss resulting from clearing app data, device resets, or uninstallation.",
+          "Aggregate Liability Cap: In no event shall our total aggregate liability for all claims arising out of or related to Mithai Merge exceed the amount paid by you ($0.00 / INR 0) or USD $10.00, whichever is greater.",
+        ],
       },
       {
-        id: "governing-law",
-        title: "11. Governing Law & Jurisdiction",
-        content:
-          "These Terms shall be governed by and construed in accordance with the laws of India, without regard to conflict of law principles. Any legal action or proceeding arising under these Terms shall be brought exclusively in courts located in India.",
+        id: "changes-to-terms",
+        title: "9. Changes to Terms",
+        content: [
+          "Modifications: We reserve the right to revise or update these Terms of Service at any time to reflect software updates, regulatory mandates, or Google Play Developer Policy revisions.",
+          "Publication of Updates: Changes become effective immediately upon publication on this website, marked by the revised 'Last Updated' date.",
+          "Continued Acceptance: Your continued installation or play of Mithai Merge following any updates signifies your binding acceptance of the revised Terms.",
+        ],
       },
       {
         id: "contact-information",
-        title: "12. Contact Information",
-        content:
-          "For any questions, feedback, or support regarding Mithai Merge or these Terms, please contact officialworldwithtechnology@gmail.com.",
+        title: "10. Contact Information & Google Play Trader Disclosures",
+        content: [
+          "Trader Identification (EU Digital Services Act): In compliance with Article 30 of the EU Digital Services Act (DSA) and Google Play Trader disclosure requirements, the legal provider of this application is:",
+          "Developer / Trader Name: Karan Saini",
+          "Trading / App Name: Mithai Merge Studio (Mithai Merge: 2048 Puzzle)",
+          "Official Contact Email: officialworldwithtechnology@gmail.com",
+          "Support & Legal Inquiries: officialworldwithtechnology@gmail.com",
+          "Country & Jurisdiction of Establishment: India",
+          "Self-Certification Commitment: The Trader hereby self-certifies that it only offers products and services that comply with applicable rules of European Union law, Indian law, and Google Play Developer Program Policies.",
+          "Consumer Inquiries & Dispute Redressal: For questions, bug reports, or legal notices, please contact officialworldwithtechnology@gmail.com. We respond to verified inquiries within 48 to 72 business hours.",
+        ],
       },
     ],
   },

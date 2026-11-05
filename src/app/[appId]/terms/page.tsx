@@ -87,6 +87,12 @@ export default function TermsPage({
           >
             Account Deletion Web Page
           </Link>
+          <Link
+            href="/termsofservices"
+            className="px-3 py-1.5 rounded-lg bg-purple-50 hover:bg-purple-100 dark:bg-purple-950/50 dark:hover:bg-purple-900/50 text-purple-700 dark:text-purple-300 transition-colors"
+          >
+            All Terms of Service
+          </Link>
         </div>
       </div>
 

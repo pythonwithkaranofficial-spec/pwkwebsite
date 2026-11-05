@@ -119,6 +119,17 @@ export function Header() {
             All Apps
           </Link>
 
+          <Link
+            href="/termsofservices"
+            className={`hover:text-blue-600 dark:hover:text-blue-400 transition-colors ${
+              pathname.startsWith("/termsofservices")
+                ? "text-blue-600 dark:text-blue-400 font-semibold"
+                : "text-slate-600 dark:text-slate-300"
+            }`}
+          >
+            Terms Directory
+          </Link>
+
           {activeApp && (
             <>
               <Link
@@ -214,6 +225,13 @@ export function Header() {
               className="block px-2 py-1.5 rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800"
             >
               All Published Apps
+            </Link>
+            <Link
+              href="/termsofservices"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-2 py-1.5 rounded-md text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 font-medium"
+            >
+              Terms of Service Directory
             </Link>
             {activeApp && (
               <>

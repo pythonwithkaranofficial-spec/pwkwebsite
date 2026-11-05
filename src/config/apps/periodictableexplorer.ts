@@ -140,72 +140,109 @@ export const periodicTableExplorerConfig: AppConfig = {
   },
   terms: {
     introduction:
-      "Welcome to Periodic Table Explorer. These Terms and Conditions ('Terms') govern your use of the Periodic Table Explorer mobile application ('App') developed by Karan Saini. By downloading, installing, or using Periodic Table Explorer, you agree to be bound by these Terms.",
+      "Welcome to Periodic Table Explorer. These Terms of Service ('Terms') constitute a legally binding agreement between you ('User', 'you', or 'your') and Karan Saini ('Developer', 'Trader', 'we', 'us', or 'our') governing your use of the Periodic Table Explorer mobile application (Package Name: com.pwk.periodictableexplorer). This application is provided as an ad-supported chemistry reference tool and complies with applicable consumer protection laws and Google Play Console Trader requirements under the EU Digital Services Act (DSA).",
     sections: [
       {
         id: "acceptance",
         title: "1. Acceptance of Terms",
-        content:
-          "By downloading, accessing, or using Periodic Table Explorer, you confirm that you have read, understood, and agreed to be bound by these Terms and Conditions and our Privacy Policy. If you do not agree, please discontinue using and uninstall the application.",
-      },
-      {
-        id: "offline-educational-use",
-        title: "2. Educational Purpose & Scientific Reference",
-        content:
-          "Periodic Table Explorer is an interactive reference and study aid provided for educational, scientific, and informational purposes for students, teachers, and researchers. While element data, atomic weights, electron configurations, Bohr models, and properties have been meticulously compiled from IUPAC (International Union of Pure and Applied Chemistry) and standard scientific references, the software is provided on an 'as-is' and 'as-available' basis without warranty of any kind.",
-      },
-      {
-        id: "no-account-architecture",
-        title: "3. Account-Free Architecture & Local Storage",
-        content:
-          "Periodic Table Explorer does not require or support user account registration. All element bookmarks, quiz statistics (scores, streaks, accuracy), and customization settings are stored locally on your device via SharedPreferences. Clearing your device application storage or uninstalling the app will permanently reset all locally saved bookmarks and quiz progress.",
-      },
-      {
-        id: "advertising-and-rewarded-ads",
-        title: "4. Third-Party Advertising & Rewarded Ad Features",
-        content:
-          "To provide free access to all 118 elements and study features, Periodic Table Explorer displays third-party advertisements served via the Google Mobile Ads (AdMob) SDK (including App Open, Banner, Interstitial, and optional Rewarded Video ads). Rewarded ads provide optional in-game lifelines (such as 50:50 quiz hints). Ad content is subject to Google AdMob's terms and advertising policies.",
-      },
-      {
-        id: "device-permissions",
-        title: "5. App Permissions & Hardware Features",
         content: [
-          "android.permission.INTERNET: Used exclusively to load advertisements via Google AdMob and check ad network availability. All scientific tables, element descriptions, and quizzes remain fully functional offline without internet access.",
-          "android.permission.VIBRATE: Used to provide optional tactile haptic feedback during UI interaction and button taps. Users can toggle haptic feedback on or off in the app Settings.",
+          "Legally Binding Contract: By downloading, installing, accessing, or using Periodic Table Explorer, you confirm that you have read, understood, and agreed to be legally bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, you must refrain from using the application and uninstall it immediately.",
+          "Eligibility & General Audience: Periodic Table Explorer is intended for students, chemistry educators, researchers, and science enthusiasts of all ages. Users under the age of 18 represent that they have reviewed these Terms with a parent or legal guardian.",
+          "Google Play Trader Status Declaration: In accordance with Article 30 of the European Union Digital Services Act (DSA) (Regulation EU 2022/2065), the developer is declared as a registered 'Trader' on Google Play, providing ad-supported digital educational software to consumers worldwide, including the European Economic Area (EEA) and the United Kingdom.",
+          "Right of Withdrawal (EU/EEA & UK Consumers): The application is provided 100% free of charge without upfront monetary payment. Under applicable statutory consumer regulations, performance begins immediately upon download. You retain the right to terminate this agreement at any time by ceasing use and uninstalling the application from your device.",
+        ],
+      },
+      {
+        id: "description-of-app",
+        title: "2. Description of the App and Services",
+        content: [
+          "Interactive Scientific Reference: Periodic Table Explorer is an interactive digital chemistry reference application providing detailed physical and chemical data for all 118 chemical elements (atomic weight, electron configuration, Bohr atomic models, oxidation states, ionization energy, electronegativity, crystal structure, and periodic trend charts).",
+          "100% Offline Core Functionality: All scientific tables, element descriptions, interactive Bohr visualizations, and chemistry quizzes operate locally on your device without requiring active network connectivity.",
+          "Account-Free & Private Architecture: The App requires zero user registration, login credentials, or cloud profile creation. You can use all reference features instantly upon launch.",
+          "Local-Only Data Storage: Element bookmarks, chemistry quiz performance statistics (scores, streak counters, accuracy rates), and user interface preferences (theme, audio, haptic feedback) are stored strictly on-device via Android SharedPreferences.",
+        ],
+      },
+      {
+        id: "user-responsibilities",
+        title: "3. User Responsibilities & Acceptable Use",
+        content: [
+          "Personal & Educational Use: You agree to use the App solely for lawful educational, academic, and non-commercial scientific reference purposes.",
+          "Prohibition on Reverse Engineering: You agree not to decompile, reverse engineer, disassemble, unpack, or attempt to derive the underlying source code of the application binary or its compiled scientific database assets.",
+          "Prohibition on Commercial Database Scraping: You may not systematically extract, bundle, scrape, or redistribute the proprietary element illustrations, Bohr visual models, or curated quiz databases for commercial sale or distribution.",
+          "Prohibition on Advertising Manipulation: You strictly agree not to use bots, automated scripts, click farms, or emulators to generate fraudulent ad impressions, clicks, or illegitimate rewarded ad lifelines.",
+          "Device Compatibility: You are responsible for ensuring that your mobile device meets the hardware and operating system requirements necessary to run the application.",
         ],
       },
       {
         id: "intellectual-property",
-        title: "6. Intellectual Property Rights",
-        content:
-          "All custom user interface designs, Bohr model visualizations, quiz algorithms, software code, icons, and graphic layouts in Periodic Table Explorer are the intellectual property of Karan Saini. You are granted a limited, personal, non-exclusive, non-transferable, revocable license to use the app for personal and educational study.",
+        title: "4. Intellectual Property Rights",
+        content: [
+          "Developer Ownership: All custom user interface layouts, Bohr atomic model illustrations, visual diagrams, chemistry quiz questions and algorithms, software code, icons, and graphic presentations in Periodic Table Explorer are the exclusive intellectual property of Karan Saini.",
+          "Limited License: Subject to your compliance with these Terms, you are granted a limited, personal, revocable, non-exclusive, non-transferable, and non-sublicensable license to use the App for personal and educational study.",
+          "Scientific Reference Attribution: Chemical nomenclature, standard atomic weights, and elemental discovery data are compiled from public international scientific standards, including the International Union of Pure and Applied Chemistry (IUPAC). Such public domain scientific factual information remains the common heritage of science.",
+        ],
       },
       {
-        id: "prohibited-activities",
-        title: "7. Prohibited Uses",
+        id: "advertisements",
+        title: "5. Advertisements (AdMob and Third-Party Ads)",
         content: [
-          "Decompiling, reverse engineering, disassembling, or attempting to derive the source code of the application binary.",
-          "Using automated bots, emulators, or ad-clicking scripts to artificially manipulate AdMob advertising impressions or rewarded ad lifelines.",
-          "Extracting, bundling, or redistributing the proprietary database assets or graphics for commercial sale without express written authorization.",
+          "Ad-Supported Monetization: To maintain free, unhindered access to all 118 elements and study features for students globally, Periodic Table Explorer is monetized via third-party advertisements delivered by Google Mobile Ads (AdMob) (AdMob App ID: ca-app-pub-1063071230306366~4799205538).",
+          "Ad Formats Deployed: The App incorporates non-intrusive ad formats including App Open ads, anchored banner ads, interstitial transitions between reference sections, and optional rewarded video ads.",
+          "Voluntary Rewarded Ads: Rewarded video ads are strictly optional and player-initiated. Watching a brief rewarded ad provides in-quiz lifelines (such as a 50:50 hint). Declining rewarded ads has no negative effect on your ability to use the periodic table or complete standard quizzes.",
+          "EU/EEA & UK Consent Management (Google UMP): The App implements Google's User Messaging Platform (UMP) SDK to capture and manage explicit advertising consent for EEA, UK, and Swiss users in full compliance with GDPR and ePrivacy requirements.",
+          "Opt-Out Mechanisms: You can manage your ad personalization choices or reset your Advertising ID at any time via Android Settings (Settings > Google > Ads) or via Google Ads Settings at https://adssettings.google.com.",
+        ],
+      },
+      {
+        id: "third-party-services",
+        title: "6. Third-Party Services",
+        content: [
+          "Third-Party SDKs: Periodic Table Explorer integrates Google AdMob for advertisement delivery, Google User Messaging Platform (UMP) for consent compliance, and Google Fonts (Poppins & Inter) cached locally for typography.",
+          "No Behavioral Analytics SDKs: The application contains zero third-party behavioral analytics, telemetry tracking SDKs, or social media trackers.",
+          "Independent Policies: Third-party SDKs operate under their own independent terms of service and privacy policies (accessible at https://policies.google.com/privacy). We do not control and are not responsible for the data practices of third-party service providers.",
+        ],
+      },
+      {
+        id: "disclaimer-of-warranties",
+        title: "7. Disclaimer of Warranties",
+        content: [
+          "Provided 'AS IS' & 'AS AVAILABLE': Periodic Table Explorer is provided on an 'AS IS' and 'AS AVAILABLE' basis without warranties or representations of any kind, whether express, statutory, or implied.",
+          "Educational Reference Only — Not for Critical Chemical Synthesis: While scientific data has been compiled with extreme diligence from IUPAC and peer-reviewed sources, this software is intended solely as an educational study companion. It is NOT certified for mission-critical laboratory chemistry, pharmaceutical formulation, hazardous materials handling, or industrial engineering calculations.",
+          "No Uptime Warranty: We do not warrant that the application will function uninterrupted, completely free from software defects, or compatible with all device hardware configurations.",
+          "Statutory Consumer Rights: Nothing in these Terms affects your non-excludable statutory rights as a consumer under EU Directive (EU) 2019/770 or applicable mandatory local laws.",
         ],
       },
       {
         id: "limitation-of-liability",
         title: "8. Limitation of Liability",
-        content:
-          "To the maximum extent permitted by applicable law, the developer shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use of or inability to use the application or any reliance placed upon the scientific data provided within the app.",
+        content: [
+          "Exclusion of Consequential Damages: To the maximum extent permitted by applicable law, Karan Saini and Periodic Table Explorer shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from the use of, or inability to use, the application or reliance upon any data contained therein.",
+          "Local Data Reset Disclaimer: Because element bookmarks and quiz records are stored strictly in local device SharedPreferences, the Developer is not liable for data loss caused by device resets, storage wipes, uninstallation, or operating system updates.",
+          "Liability Cap: To the extent liability cannot be excluded by law, our total aggregate liability for any and all claims shall be limited to the amount paid by you to use the App ($0.00 / INR 0) or USD $10.00, whichever is greater.",
+        ],
       },
       {
-        id: "governing-law",
-        title: "9. Governing Law & Jurisdiction",
-        content:
-          "These Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles.",
+        id: "changes-to-terms",
+        title: "9. Changes to Terms",
+        content: [
+          "Modifications & Revisions: We reserve the right to revise, update, or amend these Terms of Service at any time to reflect software updates, regulatory mandates, or Google Play Developer Policy revisions.",
+          "Publication of Updates: Changes become effective upon publication on this website, marked with an updated 'Last Updated' date.",
+          "Continued Acceptance: Your continued installation or use of Periodic Table Explorer following the posting of revised Terms constitutes your unconditional acceptance of the revised Terms.",
+        ],
       },
       {
         id: "contact-information",
-        title: "10. Contact & Support",
-        content:
-          "For any questions, feedback, or inquiries regarding these Terms or the application, please reach out to officialworldwithtechnology@gmail.com.",
+        title: "10. Contact Information & Google Play Trader Disclosures",
+        content: [
+          "Trader Identification (EU Digital Services Act): In compliance with Article 30 of the EU Digital Services Act (DSA) and Google Play Trader disclosure requirements, the legal provider of this application is:",
+          "Developer / Trader Name: Karan Saini",
+          "Trading / App Name: Periodic Table Explorer",
+          "Official Contact Email: officialworldwithtechnology@gmail.com",
+          "Support & Legal Contact: officialworldwithtechnology@gmail.com",
+          "Country & Jurisdiction of Establishment: India",
+          "Self-Certification Commitment: The Trader hereby self-certifies that it only offers products and services that comply with applicable rules of European Union law, Indian law, and Google Play Developer Program Policies.",
+          "Consumer Dispute Inquiries: For questions, feedback, or legal notices concerning these Terms, please contact officialworldwithtechnology@gmail.com. We respond to verified user queries within 48 to 72 business hours.",
+        ],
       },
     ],
   },

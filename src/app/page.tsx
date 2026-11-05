@@ -52,6 +52,14 @@ export default function HomePage() {
               Select an application to view its official legal disclosures and compliance documents.
             </p>
           </div>
+          <Link
+            href="/termsofservices"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-purple-50 hover:bg-purple-100 dark:bg-purple-950/60 dark:hover:bg-purple-900/60 text-purple-700 dark:text-purple-300 text-xs font-semibold border border-purple-200/60 dark:border-purple-800/60 transition-colors shrink-0"
+          >
+            <FileText className="w-3.5 h-3.5" />
+            <span>Terms of Service Hub</span>
+            <ArrowRight className="w-3 h-3" />
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

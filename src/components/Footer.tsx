@@ -110,6 +110,10 @@ export function Footer() {
             <Link href="/" className="hover:text-slate-600 dark:hover:text-slate-300">
               Portal Directory
             </Link>
+            <span>•</span>
+            <Link href="/termsofservices" className="hover:text-purple-600 dark:hover:text-purple-400">
+              Terms of Service Hub
+            </Link>
           </div>
         </div>
       </div>

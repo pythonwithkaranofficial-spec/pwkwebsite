@@ -18,6 +18,30 @@ export const appsRegistry: Record<string, AppConfig> = {
   mithaimerge: mithaiMergeConfig,
 };
 
+// Common slug aliases for URL flexibility (e.g. periodic-table-explorer -> periodictableexplorer)
+export const appSlugAliases: Record<string, string> = {
+  "periodic-table-explorer": "periodictableexplorer",
+  "ncert-math-formulas-hub": "ncertmathformulashub",
+  "ncert-math-formulas": "ncertmathformulashub",
+  "purple-monster": "purplemonster",
+  "purple-monster-snack-rain": "purplemonster",
+  "font-zyle": "fontzyle",
+  "mithai-merge": "mithaimerge",
+  "mithai-merge-2048-puzzle": "mithaimerge",
+  "smart-paper": "smartpaper",
+  "python-with-karan": "pythonwithkaran",
+};
+
+export function normalizeAppSlug(slug: string): string {
+  if (!slug) return "";
+  const normalized = slug.toLowerCase().trim();
+  if (appsRegistry[normalized]) return normalized;
+  const stripped = normalized.replace(/[-_]/g, "");
+  if (appsRegistry[stripped]) return stripped;
+  if (appSlugAliases[normalized]) return appSlugAliases[normalized];
+  return normalized;
+}
+
 // Returns only currently published apps (used in public app directory, header, and footer)
 export function getAllApps(): AppConfig[] {
   return Object.values(appsRegistry).filter((app) => app.metadata.published);
@@ -29,12 +53,18 @@ export function getAllPublishedApps(): AppConfig[] {
 
 // Returns config only if the app exists and is published (returns undefined -> 404 for unpublished apps)
 export function getAppConfig(appId: string): AppConfig | undefined {
-  const normalizedId = appId.toLowerCase().trim();
-  const app = appsRegistry[normalizedId];
+  const canonicalId = normalizeAppSlug(appId);
+  const app = appsRegistry[canonicalId];
   if (app && app.metadata.published) {
     return app;
   }
   return undefined;
+}
+
+// Returns config for any registered app, including unpublished ones
+export function getAnyAppConfig(appId: string): AppConfig | undefined {
+  const canonicalId = normalizeAppSlug(appId);
+  return appsRegistry[canonicalId];
 }
 
 export function isValidAppId(appId: string): boolean {
