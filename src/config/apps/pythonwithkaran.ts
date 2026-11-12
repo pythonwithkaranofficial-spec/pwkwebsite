@@ -9,7 +9,7 @@ export const pythonWithKaranConfig: AppConfig = {
     description:
       "Learn. Code. Excel. A Flutter educational app delivering computer science, IT, IP & AI study notes, video tutorials, MCQs, and previous year question papers for CBSE Classes 9–12 students.",
     logoUrl: "/apps/pythonwithkaran/logo.png",
-    version: "1.0.0",
+    version: "1.1.4",
     effectiveDate: "August 13, 2026",
     lastUpdated: "August 31, 2026",
     platform: "Android",

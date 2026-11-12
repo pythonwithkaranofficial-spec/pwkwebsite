@@ -9,7 +9,7 @@ export const periodicTableExplorerConfig: AppConfig = {
     description:
       "Interactive Periodic Table & Chemistry Reference. Explore all 118 elements, electron configurations, Bohr models, chemical properties, interactive element comparisons, and quiz games — fully functional 100% offline.",
     logoUrl: "/apps/periodictableexplorer/logo.png",
-    version: "1.0.0",
+    version: "1.1.0",
     effectiveDate: "August 17, 2026",
     lastUpdated: "August 17, 2026",
     platform: "iOS & Android",

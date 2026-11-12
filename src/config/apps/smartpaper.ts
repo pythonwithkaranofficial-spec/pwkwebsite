@@ -4,7 +4,7 @@ export const smartPaperConfig: AppConfig = {
   metadata: {
     id: "smartpaper",
     name: "SmartPaper",
-    packageName: "com.pwk.smartpaper",
+    packageName: "com.pwk.smartpapergenerator",
     category: "Productivity",
     description: "Smart paper scanner and document organization tool for mobile users.",
     logoUrl: "/apps/smartpaper/logo.png",
@@ -50,7 +50,7 @@ export const smartPaperConfig: AppConfig = {
   },
   terms: {
     introduction:
-      "Welcome to SmartPaper. These Terms of Service ('Terms') constitute a legally binding agreement between you ('User', 'you', or 'your') and Karan Saini ('Developer', 'Trader', 'we', 'us', or 'our') governing your use of the SmartPaper mobile application (Package Name: com.pwk.smartpaper). This application is provided as a mobile document scanning and productivity utility and complies with applicable consumer protection laws and Google Play Console Trader requirements under the EU Digital Services Act (DSA).",
+      "Welcome to SmartPaper. These Terms of Service ('Terms') constitute a legally binding agreement between you ('User', 'you', or 'your') and Karan Saini ('Developer', 'Trader', 'we', 'us', or 'our') governing your use of the SmartPaper mobile application (Package Name: com.pwk.smartpapergenerator). This application is provided as a mobile document scanning and productivity utility and complies with applicable consumer protection laws and Google Play Console Trader requirements under the EU Digital Services Act (DSA).",
     sections: [
       {
         id: "acceptance",

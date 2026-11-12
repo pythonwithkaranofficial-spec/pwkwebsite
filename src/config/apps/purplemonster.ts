@@ -9,7 +9,7 @@ export const purpleMonsterConfig: AppConfig = {
     description:
       "Purple Monster: Snack Rain is a free, fun arcade game where you control a purple monster to catch falling snacks. Features monster skins, arena backgrounds, achievements, boosters, and a coin progression system — all fully offline with no accounts or logins required.",
     logoUrl: "/apps/purplemonster/logo.png",
-    version: "1.5.3",
+    version: "1.7.3",
     effectiveDate: "October 29, 2026",
     lastUpdated: "October 29, 2026",
     platform: "Android",

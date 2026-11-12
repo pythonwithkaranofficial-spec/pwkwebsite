@@ -9,7 +9,7 @@ export const mithaiMergeConfig: AppConfig = {
     description:
       "Mithai Merge: 2048 Puzzle is an Indian sweet-themed sliding block puzzle game featuring campaign levels (Mithai Yatra), endless mode, classic 2048 merges, vibrant cosmetic themes, streaks, and tactile haptic feedback — built on a zero-login, offline-first local sandbox architecture with zero server-side data collection.",
     logoUrl: "/apps/mithaimerge/logo.png",
-    version: "1.0.0",
+    version: "1.0.1",
     effectiveDate: "October 29, 2026",
     lastUpdated: "October 29, 2026",
     platform: "Android",

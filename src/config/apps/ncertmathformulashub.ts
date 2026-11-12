@@ -4,7 +4,7 @@ export const ncertMathFormulasHubConfig: AppConfig = {
   metadata: {
     id: "ncertmathformulashub",
     name: "NCERT Math Formulas Hub",
-    packageName: "com.pwk.ncertmathformulashub",
+    packageName: "com.pwk.ncert_math_formulas",
     category: "Education",
     description:
       "Comprehensive offline NCERT Mathematics formulas, theorems, and definitions reference for Class 9, Class 10, Class 11, and Class 12 students. Features chapter-wise formulas, interactive flashcards, bookmarks, daily study streaks, and practice quizzes — fully functional 100% offline.",
@@ -24,7 +24,7 @@ export const ncertMathFormulasHubConfig: AppConfig = {
   },
   privacy: {
     introduction:
-      "NCERT Math Formulas Hub ('we', 'our', or 'the App') is committed to protecting your privacy. This Privacy Policy explains how NCERT Math Formulas Hub handles information when you use our mobile application available on the Google Play Store (Package ID: com.pwk.ncertmathformulashub). We are committed to protecting your privacy. This App is designed as an offline-first educational tool for students from Class 9 to Class 12.",
+      "NCERT Math Formulas Hub ('we', 'our', or 'the App') is committed to protecting your privacy. This Privacy Policy explains how NCERT Math Formulas Hub handles information when you use our mobile application available on the Google Play Store (Package ID: com.pwk.ncert_math_formulas). We are committed to protecting your privacy. This App is designed as an offline-first educational tool for students from Class 9 to Class 12.",
     dataCollection: [
       {
         category: "Personal Information (Zero PII Collection)",
@@ -135,7 +135,7 @@ export const ncertMathFormulasHubConfig: AppConfig = {
   },
   terms: {
     introduction:
-      "Welcome to NCERT Math Formulas Hub. These Terms of Service ('Terms') constitute a legally binding agreement between you ('User', 'you', or 'your') and Karan Saini ('Developer', 'Trader', 'we', 'us', or 'our') governing your use of the NCERT Math Formulas Hub mobile application (Package Name: com.pwk.ncertmathformulashub). This application is provided as an ad-supported mathematics study tool and complies with applicable consumer protection laws and Google Play Console Trader requirements under the EU Digital Services Act (DSA).",
+      "Welcome to NCERT Math Formulas Hub. These Terms of Service ('Terms') constitute a legally binding agreement between you ('User', 'you', or 'your') and Karan Saini ('Developer', 'Trader', 'we', 'us', or 'our') governing your use of the NCERT Math Formulas Hub mobile application (Package Name: com.pwk.ncert_math_formulas). This application is provided as an ad-supported mathematics study tool and complies with applicable consumer protection laws and Google Play Console Trader requirements under the EU Digital Services Act (DSA).",
     sections: [
       {
         id: "acceptance",

@@ -7,6 +7,8 @@ import { purpleMonsterConfig } from "./purplemonster";
 import { fontzyleConfig } from "./fontzyle";
 import { mithaiMergeConfig } from "./mithaimerge";
 import { pyBossConfig } from "./pyboss";
+import { pyKakshaConfig } from "./pykaksha";
+import { octaCalcConfig } from "./octacalc";
 
 // Registry of all registered applications
 export const appsRegistry: Record<string, AppConfig> = {
@@ -18,6 +20,8 @@ export const appsRegistry: Record<string, AppConfig> = {
   fontzyle: fontzyleConfig,
   mithaimerge: mithaiMergeConfig,
   pyboss: pyBossConfig,
+  pykaksha: pyKakshaConfig,
+  octacalc: octaCalcConfig,
 };
 
 // Common slug aliases for URL flexibility (e.g. periodic-table-explorer -> periodictableexplorer)
@@ -33,6 +37,8 @@ export const appSlugAliases: Record<string, string> = {
   "smart-paper": "smartpaper",
   "python-with-karan": "pythonwithkaran",
   "py-boss": "pyboss",
+  "py-kaksha": "pykaksha",
+  "octa-calc": "octacalc",
 };
 
 export function normalizeAppSlug(slug: string): string {
