@@ -6,6 +6,7 @@ import { ncertMathFormulasHubConfig } from "./ncertmathformulashub";
 import { purpleMonsterConfig } from "./purplemonster";
 import { fontzyleConfig } from "./fontzyle";
 import { mithaiMergeConfig } from "./mithaimerge";
+import { pyBossConfig } from "./pyboss";
 
 // Registry of all registered applications
 export const appsRegistry: Record<string, AppConfig> = {
@@ -16,6 +17,7 @@ export const appsRegistry: Record<string, AppConfig> = {
   purplemonster: purpleMonsterConfig,
   fontzyle: fontzyleConfig,
   mithaimerge: mithaiMergeConfig,
+  pyboss: pyBossConfig,
 };
 
 // Common slug aliases for URL flexibility (e.g. periodic-table-explorer -> periodictableexplorer)
@@ -30,6 +32,7 @@ export const appSlugAliases: Record<string, string> = {
   "mithai-merge-2048-puzzle": "mithaimerge",
   "smart-paper": "smartpaper",
   "python-with-karan": "pythonwithkaran",
+  "py-boss": "pyboss",
 };
 
 export function normalizeAppSlug(slug: string): string {
