@@ -9,6 +9,7 @@ import { mithaiMergeConfig } from "./mithaimerge";
 import { pyBossConfig } from "./pyboss";
 import { pyKakshaConfig } from "./pykaksha";
 import { octaCalcConfig } from "./octacalc";
+import { triScienceFusionConfig } from "./trisciencefusion";
 
 // Registry of all registered applications
 export const appsRegistry: Record<string, AppConfig> = {
@@ -22,6 +23,7 @@ export const appsRegistry: Record<string, AppConfig> = {
   pyboss: pyBossConfig,
   pykaksha: pyKakshaConfig,
   octacalc: octaCalcConfig,
+  trisciencefusion: triScienceFusionConfig,
 };
 
 // Common slug aliases for URL flexibility (e.g. periodic-table-explorer -> periodictableexplorer)
@@ -39,6 +41,8 @@ export const appSlugAliases: Record<string, string> = {
   "py-boss": "pyboss",
   "py-kaksha": "pykaksha",
   "octa-calc": "octacalc",
+  "tri-science-fusion": "trisciencefusion",
+  "triscience": "trisciencefusion",
 };
 
 export function normalizeAppSlug(slug: string): string {
