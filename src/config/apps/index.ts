@@ -10,6 +10,7 @@ import { pyBossConfig } from "./pyboss";
 import { pyKakshaConfig } from "./pykaksha";
 import { octaCalcConfig } from "./octacalc";
 import { triScienceFusionConfig } from "./trisciencefusion";
+import { rozgaarReadyConfig } from "./rozgaarready";
 
 // Registry of all registered applications
 export const appsRegistry: Record<string, AppConfig> = {
@@ -24,6 +25,7 @@ export const appsRegistry: Record<string, AppConfig> = {
   pykaksha: pyKakshaConfig,
   octacalc: octaCalcConfig,
   trisciencefusion: triScienceFusionConfig,
+  rozgaarready: rozgaarReadyConfig,
 };
 
 // Common slug aliases for URL flexibility (e.g. periodic-table-explorer -> periodictableexplorer)
@@ -43,6 +45,8 @@ export const appSlugAliases: Record<string, string> = {
   "octa-calc": "octacalc",
   "tri-science-fusion": "trisciencefusion",
   "triscience": "trisciencefusion",
+  "rozgaar-ready": "rozgaarready",
+  "rozgar-ready": "rozgaarready",
 };
 
 export function normalizeAppSlug(slug: string): string {
